@@ -12,5 +12,6 @@ html, body {
 }
 
 .section_1 {
+  height: 111.588%;
   background-image: linear-gradient(#EF8942, #D44312);
 }
