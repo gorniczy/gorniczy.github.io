@@ -12,11 +12,15 @@ html, body {
   width: 100%;
 }
 
-.section_1 {
+.polygon {
   height: 111.588%;
   background-image: linear-gradient(#EF8942, #D44312);
   clip-path: polygon(0% 100%, 100% 90%, 100% 0%, 0% 0%);
   -webkit-clip-path: polygon(0% 100%, 100% 90%, 100% 0%, 0% 0%);
+}
+
+.section_2 {
+
 }
 
 .section_6 {
