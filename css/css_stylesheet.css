@@ -19,8 +19,12 @@ html, body {
   -webkit-clip-path: polygon(0% 100%, 100% 90%, 100% 0%, 0% 0%);
 }
 
-.section_2 {
+.section_2, .section_4 {
+  background-color: #FFF5EE;
+}
 
+.section_3, .section_5 {
+  background-color: #FED8BE;
 }
 
 .section_6 {
