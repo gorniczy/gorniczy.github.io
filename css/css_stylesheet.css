@@ -31,3 +31,9 @@ html, body {
   height: 13.541%;
   background-image: linear-gradient(#EF8942, #D44312);
 }
+
+.line {
+width: 100%;
+padding-top: 5px;
+border: 1px solid #FBE1D7;
+}
