@@ -54,6 +54,7 @@ html, body {
 .links {
   display: flex;
   align-items: center;
+  height: 3%;
   width: 100%;
   padding: 6% 0%;
 }
@@ -64,6 +65,11 @@ html, body {
   color: #A94C0A;
   text-decoration: none;
   margin-left: auto;
+}
+
+.links a:hover {
+  font-size: 19px;
+  color: #FFE0D6;
 }
 
 .links img {
