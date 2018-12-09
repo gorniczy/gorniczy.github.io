@@ -1,6 +1,4 @@
-* {
-  outline: 1px solid red;
-}
+
 
 html, body {
   height: 100%;
@@ -10,6 +8,7 @@ html, body {
 .section {
   height: 100%;
   width: 100%;
+  margin: 0px;
 }
 
 .polygon {
@@ -35,5 +34,6 @@ html, body {
 .line {
 width: 100%;
 padding-top: 5px;
-border: 1px solid #FBE1D7;
+margin: 0px;
+border-bottom: 1px solid #FBE1D7;
 }
