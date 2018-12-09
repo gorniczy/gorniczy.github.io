@@ -1,4 +1,6 @@
-
+* {
+  outline: 1px solid red;
+}
 
 html, body {
   height: 100%;
@@ -11,11 +13,41 @@ html, body {
   margin: 0px;
 }
 
+
+/* Intro section */
+
+
 .polygon {
   height: 111.588%;
   background-image: linear-gradient(#EF8942, #D44312);
   clip-path: polygon(0% 100%, 100% 90%, 100% 0%, 0% 0%);
   -webkit-clip-path: polygon(0% 100%, 100% 90%, 100% 0%, 0% 0%);
+}
+
+.line {
+  width: 100%;
+  padding-top: 5px;
+  margin: 0px;
+  border-bottom: 1px solid #FBE1D7;
+}
+
+.description {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.name {
+  display: block;
+  text-align: center;
+  font-family: heisei-kaku-gothic-std, sans-serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 900;
+  color: #FFE0D6;
+}
+
+.emphasis {
+  color: #103470;
 }
 
 .section_2, .section_4 {
@@ -29,11 +61,4 @@ html, body {
 .section_6 {
   height: 13.541%;
   background-image: linear-gradient(#EF8942, #D44312);
-}
-
-.line {
-width: 100%;
-padding-top: 5px;
-margin: 0px;
-border-bottom: 1px solid #FBE1D7;
 }
