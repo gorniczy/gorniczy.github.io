@@ -1,6 +1,6 @@
-* {
+/* {
   outline: 1px solid red;
-}
+}*/
 
 html, body {
   height: 100%;
@@ -32,12 +32,19 @@ html, body {
 }
 
 .description {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
   margin: 0 auto;
   width: 70%;
+  height: 66.8%;
 }
 
 .name {
-  display: block;
+  height: 26.5%;
+  width: 100%;
+  margin: 0px;
   text-align: center;
   font-family: heisei-kaku-gothic-std, sans-serif;
   font-size: 72px;
@@ -49,6 +56,49 @@ html, body {
 .emphasis {
   color: #103470;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 50%;
+  height: 73.5%;
+}
+
+.container_design {
+  border-right: 1px solid #FBE1D7;
+}
+
+.domain {
+  margin: 0 auto;
+  font-family: Arial-BoldMT;
+  font-size: 24px;
+  color: #FFE0D6;
+  text-align: center;
+}
+
+.container hr {
+  height: 1px;
+  width: 27%;
+  border: 0px;
+  margin: 3% 0% 5% 0%;
+  background: #FBE1D7;
+}
+
+.domain_content {
+  width: 64%;
+  text-align: justify;
+  margin: 0px;
+  font-family: ArialMT;
+  font-size: 18px;
+  color: #FFBCA5;
+}
+
+
+/* Projects */
+
 
 .section_2, .section_4 {
   background-color: #FFF5EE;
