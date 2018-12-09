@@ -1,6 +1,6 @@
-/* {
+* {
   outline: 1px solid red;
-}*/
+}
 
 html, body {
   height: 100%;
@@ -25,11 +25,13 @@ html, body {
 }
 
 .line {
-  display: block;
+  border-bottom: 1px solid #FBE1D7;
+}
+
+.line_1 {
   width: 100%;
   padding-top: 5px;
   margin: 0px;
-  border-bottom: 1px solid #FBE1D7;
 }
 
 .sidebar {
@@ -68,7 +70,11 @@ html, body {
   width: 8%;
   margin-left: auto;
   margin-right: -4%;
+}
 
+.line_2 {
+  width: 127%;
+  margin: auto -180% 25% 0%;
 }
 
 .description {
