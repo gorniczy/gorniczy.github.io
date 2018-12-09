@@ -25,30 +25,40 @@ html, body {
 }
 
 .line {
+  display: block;
   width: 100%;
   padding-top: 5px;
   margin: 0px;
   border-bottom: 1px solid #FBE1D7;
 }
 
+.sidebar {
+  display: inline-flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 7.5%;
+  height: 86%;
+  margin-top: -5px;
+  border-right: 1px solid #FBE1D7;
+}
+
 .description {
-  display: flex;
+  display: inline-flex;
+  float: right;
+  margin-right: 15%;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  margin: 0 auto;
   width: 70%;
   height: 66.8%;
 }
 
 .name {
   height: 26.5%;
-  width: 100%;
   margin: 0px;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-size: 72px;
-  font-style: normal;
   font-weight: 700;
   color: #FFE0D6;
 }
