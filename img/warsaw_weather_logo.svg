@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="187px" height="107px" viewBox="0 0 187 107" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="93.2186034" y="78.2117107" width="50.0285169" height="26.7947527"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Portfolio" transform="translate(-590.000000, -1046.000000)">
+            <g id="logo" transform="translate(591.000000, 1047.000000)">
+                <g id="Group">
+                    <path d="M29.665918,105.005452 C13.2591676,104.871215 0,91.3865929 0,74.7718438 C0,58.0737244 13.3925663,44.5372241 29.913134,44.5372241 C46.4337017,44.5372241 59.826268,58.0737244 59.826268,74.7718438 C59.826268,76.0409908 59.7489015,77.2918736 59.5986755,78.5199371 L146.846294,78.5199371 L146.846294,105.006463 L29.665918,105.006463 Z" id="Oval" stroke="#000000" stroke-width="0.2" fill="#E4E9F4"></path>
+                    <g id="Rectangle-2">
+                        <use fill="#616161" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#000000" stroke-width="0.2" x="93.3186034" y="78.3117107" width="49.8285169" height="26.5947527"></rect>
+                    </g>
+                    <ellipse id="Oval" stroke="#121212" stroke-width="0.2" fill="#FFBE33" cx="91.2390577" cy="52.5032317" rx="52.0080625" ry="52.5032317"></ellipse>
+                    <ellipse id="Oval" stroke="#000000" stroke-width="0.2" fill="#FDE0A0" cx="143.24712" cy="64.99538" rx="42.1103343" ry="40.3731747"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

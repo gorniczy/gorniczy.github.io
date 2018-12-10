@@ -1,6 +1,6 @@
-/* {
+* {
   outline: 1px solid red;
-}*/
+}
 
 html, body {
   height: 100%;
@@ -173,7 +173,7 @@ html, body {
   color: #FFBCA5;
 }
 
-.clickable_scroll {
+.clickable_scroll.--1 {
   display: inline-block;
   width: 3.5%;
   transform: translateY(50%);
@@ -218,9 +218,60 @@ html, body {
 }
 
 .project_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   height: 100%;
   width: 30%;
   background: #FFFFFF;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+  margin-bottom: auto;
+}
+
+.square.--1 {
+  background-image: radial-gradient(50% 50%, #F7BF92 50%, #EA9754 100%);
+}
+
+.project_logo.--1 {
+  width: 57%;
+}
+
+.square.--2 {
+  background-image: radial-gradient(50% 50%, #809CCE 50%, #5376B1 100%);
+}
+
+.project_logo.--2 {
+  width: 66%;
+}
+
+.square.--3 {
+  background-image: radial-gradient(50% 50%, #73C9BD 50%, #4AA99B 100%);
+}
+
+.project_logo.--3 {
+  width: 43%;
+}
+
+.project_name {
+  font-family: Arial;
+  font-size: 18px;
+  color: #181818;
+  text-align: center;
+  margin-top: 15%;
+}
+
+.clickable_scroll.--2 {
+  width: 10%;
+  margin-top: auto;
+  transform: translateY(50%);
 }
 
 /* Project 001 */
