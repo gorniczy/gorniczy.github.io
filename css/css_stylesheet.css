@@ -8,6 +8,7 @@ html, body {
 }
 
 .section {
+  display: flex;
   height: 100%;
   width: 100%;
   margin: 0px;
@@ -202,6 +203,27 @@ html, body {
 .section_2, .section_4 {
   background-color: #FFF5EE;
 }
+
+.section_2 {
+  justify-content: center;
+  align-items: center;
+}
+
+.project_cards {
+  display: flex;
+  justify-content: space-between;
+  height: 52%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.project_card {
+  height: 100%;
+  width: 30%;
+  background: #FFFFFF;
+}
+
+/* Project 001 */
 
 .section_3, .section_5 {
   background-color: #FED8BE;
