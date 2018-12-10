@@ -94,12 +94,18 @@ html, body {
 .social_icons {
   display: flex;
   width: 15%;
-  margin-left: auto;
+  margin: 2.6% 3.3% 5% auto;
   justify-content: space-between;
 }
 
-.social_icons img {
+.social_icons a {
   width: 16%;
+}
+
+.social_icons a img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .description {
@@ -109,11 +115,11 @@ html, body {
   align-content: center;
   flex-wrap: wrap;
   width: 76%;
-  height: 81%;
+  height: 75%;
 }
 
 .name {
-  height: 26.5%;
+  height: 23%;
   margin: 0px;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
@@ -129,11 +135,10 @@ html, body {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   box-sizing: border-box;
   width: 50%;
-  height: 73.5%;
+  height: 77%;
 }
 
 .container_design {
@@ -141,7 +146,7 @@ html, body {
 }
 
 .domain {
-  margin: 0 auto;
+  margin: 15% 0 0 0;
   font-family: Arial;
   font-size: 24px;
   font-weight: bold;
