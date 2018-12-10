@@ -1,6 +1,6 @@
-* {
+/* {
   outline: 1px solid red;
-}
+}*/
 
 html, body {
   height: 100%;
@@ -36,7 +36,6 @@ html, body {
 
 .section_1_sidebar {
   display: inline-flex;
-  vertical-align: middle;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
@@ -60,16 +59,16 @@ html, body {
   padding: 6% 0%;
 }
 
-.links a {
+.clickable_contents {
   font-family: Arial;
-  font-size: 18px;
+  font-size: 1.3vw;
   color: #A94C0A;
   text-decoration: none;
   margin-left: auto;
 }
 
-.links a:hover {
-  font-size: 19px;
+.clickable_contents:hover {
+  font-size: 1.4vw;
   color: #FFE0D6;
 }
 
@@ -85,7 +84,9 @@ html, body {
 }
 
 .section_1_content {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
   vertical-align: top;
   width: 92%;
   height: 82.5%;
@@ -98,11 +99,11 @@ html, body {
   justify-content: space-between;
 }
 
-.social_icons a {
+.clickable_social {
   width: 16%;
 }
 
-.social_icons a img {
+.href_img {
   display: block;
   margin: 0 auto;
   width: 100%;
@@ -123,7 +124,7 @@ html, body {
   margin: 0px;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  font-size: 72px;
+  font-size: 5.2vw;
   font-weight: 700;
   color: #FFE0D6;
 }
@@ -148,7 +149,7 @@ html, body {
 .domain {
   margin: 15% 0 0 0;
   font-family: Arial;
-  font-size: 24px;
+  font-size: 1.75vw;
   font-weight: bold;
   color: #FFE0D6;
   text-align: center;
@@ -167,10 +168,33 @@ html, body {
   text-align: justify;
   margin: 0px;
   font-family: Arial;
-  font-size: 18px;
+  font-size: 1.3vw;
   color: #FFBCA5;
 }
 
+.clickable_scroll {
+  display: inline-block;
+  width: 3.5%;
+  transform: translateY(50%);
+  margin-top: auto;
+}
+
+.clickable_hire_me {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  height: 5%;
+  width: 8%;
+  border-radius: 0.5rem 0.5rem 0 0.5rem;
+  background: #FFBCA5;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 1.3vw;
+  font-weight: bold;
+  color: #C45E1C;
+  margin: 0 3.3% auto 0;
+}
 
 /* Projects */
 
