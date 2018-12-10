@@ -34,8 +34,9 @@ html, body {
   margin: 0px;
 }
 
-.sidebar {
+.section_1_sidebar {
   display: inline-flex;
+  vertical-align: middle;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
@@ -83,22 +84,32 @@ html, body {
   margin: auto -180% 25% 0%;
 }
 
+.section_1_content {
+  display: inline-block;
+  vertical-align: top;
+  width: 92%;
+  height: 82.5%;
+}
+
 .social_icons {
   display: flex;
-  width: 14%;
-  justify-content: space-between;
+  width: 15%;
   margin-left: auto;
+  justify-content: space-between;
+}
+
+.social_icons img {
+  width: 16%;
 }
 
 .description {
   display: flex;
-  margin-left: auto;
-  margin-right: 15%;
+  margin: 0 auto;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  width: 70%;
-  height: 66.8%;
+  width: 76%;
+  height: 81%;
 }
 
 .name {
