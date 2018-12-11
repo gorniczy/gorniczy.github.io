@@ -29,20 +29,23 @@ html, body {
   border-bottom: 1px solid #FBE1D7;
 }
 
-.line_1 {
+.line.--1 {
   width: 100%;
-  padding-top: 5px;
+  padding-top: 0.35%;
   margin: 0px;
 }
 
-.section_1_sidebar {
+.sidebar {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
   width: 7.5%;
+  margin-top: -0.35%;
+}
+
+.section.--1 .sidebar {
   height: 86%;
-  margin-top: -5px;
   border-right: 1px solid #FBE1D7;
 }
 
@@ -60,7 +63,7 @@ html, body {
   padding: 6% 0%;
 }
 
-.clickable_contents {
+.clickable.contents {
   font-family: Arial;
   font-size: 1.3vw;
   color: #A94C0A;
@@ -68,7 +71,7 @@ html, body {
   margin-left: auto;
 }
 
-.clickable_contents:hover {
+.clickable.contents:hover {
   font-size: 1.4vw;
   color: #FFE0D6;
 }
@@ -79,12 +82,12 @@ html, body {
   margin-right: -4%;
 }
 
-.line_2 {
+.line.--2 {
   width: 127%;
   margin: auto -180% 25% 0%;
 }
 
-.section_1_content {
+.section.--1 .content {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -93,18 +96,18 @@ html, body {
   height: 82.5%;
 }
 
-.social_icons {
+.social-icons {
   display: flex;
   width: 15%;
   margin: 2.6% 3.3% 5% auto;
   justify-content: space-between;
 }
 
-.clickable_social {
+.clickable.social {
   width: 16%;
 }
 
-.href_img {
+.href-img {
   display: block;
   margin: 0 auto;
   width: 100%;
@@ -120,7 +123,7 @@ html, body {
   height: 75%;
 }
 
-.name {
+.name-last-name {
   height: 23%;
   margin: 0px;
   text-align: center;
@@ -134,7 +137,7 @@ html, body {
   color: #103470;
 }
 
-.container {
+.description .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,11 +146,11 @@ html, body {
   height: 77%;
 }
 
-.container_design {
+.container.design {
   border-right: 1px solid #FBE1D7;
 }
 
-.domain {
+.domain-name {
   margin: 15% 0 0 0;
   font-family: Arial;
   font-size: 1.75vw;
@@ -164,7 +167,7 @@ html, body {
   background: #FBE1D7;
 }
 
-.domain_content {
+.domain-text {
   width: 64%;
   text-align: justify;
   margin: 0px;
@@ -173,14 +176,7 @@ html, body {
   color: #FFBCA5;
 }
 
-.clickable_scroll.--1 {
-  display: inline-block;
-  width: 3.5%;
-  transform: translateY(50%);
-  margin-top: auto;
-}
-
-.clickable_hire_me {
+.clickable.hire-me {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -197,19 +193,26 @@ html, body {
   margin: 0 3.3% auto 0;
 }
 
+.clickable.scroll.--1 {
+  display: inline-block;
+  width: 3.5%;
+  transform: translateY(50%);
+  margin-top: auto;
+}
+
 /* Projects */
 
 
-.section_2, .section_4 {
+.section.--2, .section.--4 {
   background-color: #FFF5EE;
 }
 
-.section_2 {
+.section.--2 {
   justify-content: center;
   align-items: center;
 }
 
-.project_cards {
+.project-cards {
   display: flex;
   justify-content: space-between;
   height: 52%;
@@ -217,7 +220,7 @@ html, body {
   margin: 0 auto;
 }
 
-.project_card {
+.project-card {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -237,30 +240,30 @@ html, body {
 }
 
 .square.--1 {
-  background-image: radial-gradient(50% 50%, #F7BF92 50%, #EA9754 100%);
+  background-image: radial-gradient(#F7BF92 25%, #EA9754 100%);
 }
 
-.project_logo.--1 {
+.project-logo.--1 {
   width: 57%;
 }
 
 .square.--2 {
-  background-image: radial-gradient(50% 50%, #809CCE 50%, #5376B1 100%);
+  background-image: radial-gradient(#809CCE 25%, #5376B1 100%);
 }
 
-.project_logo.--2 {
+.project-logo.--2 {
   width: 66%;
 }
 
 .square.--3 {
-  background-image: radial-gradient(50% 50%, #73C9BD 50%, #4AA99B 100%);
+  background-image: radial-gradient(#73C9BD 25%, #4AA99B 100%);
 }
 
-.project_logo.--3 {
+.project-logo.--3 {
   width: 43%;
 }
 
-.project_name {
+.project-name {
   font-family: Arial;
   font-size: 18px;
   color: #181818;
@@ -268,7 +271,7 @@ html, body {
   margin-top: 15%;
 }
 
-.clickable_scroll.--2 {
+.clickable.scroll.--2 {
   width: 10%;
   margin-top: auto;
   transform: translateY(50%);
@@ -276,11 +279,11 @@ html, body {
 
 /* Project 001 */
 
-.section_3, .section_5 {
+.section.--3, .section.--5 {
   background-color: #FED8BE;
 }
 
-.section_6 {
+.section.--6 {
   height: 13.541%;
   background-image: linear-gradient(#EF8942, #D44312);
 }
