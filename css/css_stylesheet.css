@@ -303,7 +303,8 @@ html, body {
   box-sizing: border-box;
 }
 
-.project-description {
+.section.--3 .project-description {
+  display: flex;
   height: 52%;
   width: 69%;
 }
@@ -388,6 +389,11 @@ html, body {
   box-sizing: border-box;
 }
 
+.section.--4 .project-description {
+  height: 52%;
+  width: 69%;
+}
+
 .section.--4 .sidebar.light {
   height: 97%;
   border-left: 1px solid #FBE1D7;
@@ -411,6 +417,11 @@ html, body {
   height: 100%;
   margin: -0.35% 0 0 0;
   box-sizing: border-box;
+}
+
+.section.--5 .project-description {
+  height: 52%;
+  width: 69%;
 }
 
 .section.--5 .sidebar.dark {
