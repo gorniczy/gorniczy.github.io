@@ -294,12 +294,18 @@ html, body {
 
 .section.--3 .content {
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   vertical-align: top;
   width: 85%;
   height: 100%;
   margin: -0.35% 0 0 0;
   box-sizing: border-box;
+}
+
+.project-description {
+  height: 52%;
+  width: 69%;
 }
 
 .section.--3 .sidebar.dark {
@@ -373,6 +379,7 @@ html, body {
 
 .section.--4 .content {
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   vertical-align: top;
   width: 85%;
@@ -397,6 +404,7 @@ html, body {
 
 .section.--5 .content {
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   vertical-align: top;
   width: 85%;
