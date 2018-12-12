@@ -226,7 +226,7 @@ html, body {
 .project-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   height: 100%;
   width: 30%;
