@@ -328,6 +328,32 @@ html, body {
   margin-bottom: 14%;
 }
 
+.section.--3 .rectangle {
+  height: 48%;
+  width: 56%;
+  background: #FDF5EF;
+}
+
+.project-description-heading {
+  width: 88%;
+  margin: -19% auto 2.6% auto;
+  font-family: Arial;
+  font-size: 1.3vw;
+  font-weight: bold;
+  color: #181818;
+  line-height: 1.6vw;
+}
+
+.project-description-paragraph {
+  width: 88%;
+  margin: 0 auto;
+  text-align: justify;
+  font-family: Arial;
+  font-size: 1vw;
+  color: #181818;
+  line-height: 1.6vw;
+}
+
 .view-live-code {
   display: flex;
   align-items: center;
