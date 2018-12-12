@@ -319,6 +319,21 @@ html, body {
   background: #FDF5EF;
 }
 
+.section.--3 .name-space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  width: 100%;
+}
+
+.section.--3 .project-name {
+  font-family: Arial;
+  font-size: 1.3vw;
+  text-align: center;
+  color: #181818;
+}
+
 .section.--3 .sidebar.dark {
   display: inline-flex;
   justify-content: flex-end;
