@@ -1,6 +1,6 @@
-* {
+/* {
   outline: 1px solid red;
-}
+}*/
 
 html, body {
   height: 100%;
@@ -704,10 +704,6 @@ html, body {
   color: #FFE0D6;
   text-decoration: none;
   margin: auto;
-}
-
-.contact-mail:hover {
-  color: #FFAA88;
 }
 
 .contact-location {
