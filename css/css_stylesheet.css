@@ -309,6 +309,11 @@ html, body {
   width: 69%;
 }
 
+.section.--3 .project-card {
+  width: 35%;
+  background: #FDF5EF;
+}
+
 .section.--3 .sidebar.dark {
   display: inline-flex;
   justify-content: flex-end;
