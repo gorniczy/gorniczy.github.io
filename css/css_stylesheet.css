@@ -14,10 +14,7 @@ html, body {
   margin: 0;
 }
 
-
 /* Intro section */
-
-
 .polygon {
   height: 111.588%;
   background-image: linear-gradient(#EF8942, #D44312);
@@ -97,14 +94,14 @@ html, body {
   height: 82.5%;
 }
 
-.social-icons {
+.section.--1 .social-icons {
   display: flex;
   width: 15%;
   margin: 2.6% 3.3% 5% auto;
   justify-content: space-between;
 }
 
-.clickable.social {
+.section.--1 .clickable.social {
   width: 16%;
 }
 
@@ -201,10 +198,7 @@ html, body {
   margin-top: auto;
 }
 
-
 /* Projects */
-
-
 .section.--2, .section.--4 {
   background-color: #FFF5EE;
 }
@@ -281,7 +275,6 @@ html, body {
 }
 
 /* Project 001 */
-
 .section.--3, .section.--5 {
   background-color: #FED8BE;
   font-size: 0;
@@ -362,7 +355,7 @@ html, body {
   width: 87%;
 }
 
-.view-live-code > span, a {
+.view-live-code>span, a {
   font-family: Arial;
   font-size: 1vw;
   color: #181818;
@@ -431,9 +424,7 @@ html, body {
   color: #181818;
 }
 
-
 /* Project 002 */
-
 .section.--4 {
   font-size: 0;
 }
@@ -547,10 +538,7 @@ html, body {
   border-left: 1px solid #FBE1D7;
 }
 
-
 /* Project 003 */
-
-
 .section.--5 .sidebar {
   height: 97%;
   border-right: 1px solid #FBE1D7;
@@ -656,7 +644,95 @@ html, body {
   margin: auto 0 25% -180%;
 }
 
+/* Contact info */
 .section.--6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 13.541%;
   background-image: linear-gradient(#EF8942, #D44312);
+}
+
+.line.--4 {
+  height: 68%;
+  max-width: 1px;
+  border-right: 1px solid #FBE1D7;
+  margin: auto auto 0 7.5%;
+  box-sizing: border-box;
+}
+
+.contact-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 10.2%;
+  margin: auto;
+  margin-left: 7.5%;
+}
+
+.contact-name span {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3vw;
+  font-weight: 700;
+  color: #FFE0D6;
+  margin: 0;
+}
+
+.contact-name-1 {
+  align-self: flex-start;
+}
+
+.contact-name-2 {
+  align-self: flex-end;
+}
+
+.emphasis.--2 {
+  color: #FFAA88;
+}
+
+.contact-phone {
+  font-family: Arial;
+  font-size: 1vw;
+  color: #FFE0D6;
+  margin: auto;
+}
+
+.contact-mail {
+  font-family: Arial;
+  font-size: 1vw;
+  font-weight: bold;
+  color: #FFE0D6;
+  text-decoration: none;
+  margin: auto;
+}
+
+.contact-mail:hover {
+  color: #FFAA88;
+}
+
+.contact-location {
+  font-family: Arial;
+  font-size: 1vw;
+  color: #FFE0D6;
+  margin: auto;
+}
+
+.section.--6 .social-icons {
+  display: flex;
+  width: 15%;
+  justify-content: space-between;
+  margin: auto;
+    margin-right: 7.5%;
+}
+
+.section.--6 .clickable.social {
+  width: 16%;
+}
+
+.line.--5 {
+  height: 68%;
+  max-width: 1px;
+  border-right: 1px solid #FBE1D7;
+  margin: auto 7.5% 0 auto;
+  box-sizing: border-box;
 }
