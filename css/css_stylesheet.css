@@ -1,6 +1,6 @@
-/* {
+* {
   outline: 1px solid red;
-}*/
+}
 
 html, body {
   height: 100%;
@@ -316,7 +316,7 @@ html, body {
   width: 65%;
 }
 
-.arrow.--1 {
+.section.--3 .arrow.--1 {
   width: 16%;
   cursor: pointer;
   margin: 0 0 5.5% 5.5%;
@@ -334,7 +334,7 @@ html, body {
   background: #FDF5EF;
 }
 
-.project-description-heading {
+.section.--3 .project-description-heading {
   width: 88%;
   margin: -19% auto 2.6% auto;
   font-family: Arial;
@@ -354,7 +354,7 @@ html, body {
   line-height: 1.6vw;
 }
 
-.view-live-code {
+.section.--3 .view-live-code {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -484,8 +484,62 @@ html, body {
 }
 
 .section.--4 .project-description {
+  display: flex;
   height: 52%;
   width: 69%;
+}
+
+.section.--4 .arrow.--1 {
+  width: 16%;
+  cursor: pointer;
+  margin: 0 5.5% 5.5% auto;
+  transform: rotate(180deg);
+}
+
+.section.--4 .rectangle {
+  margin-left: auto;
+  height: 48%;
+  width: 56%;
+  background: #FED8BE;
+}
+
+.section.--4 .project-description-heading {
+  width: 88%;
+  margin: -19% auto 2.6% auto;
+  font-family: Arial;
+  font-size: 1.3vw;
+  font-weight: bold;
+  text-align: right;
+  color: #181818;
+  line-height: 1.6vw;
+}
+
+.section.--4 .view-live-code {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: center;
+  width: 87%;
+}
+
+.section.--4 .project-card {
+  width: 35%;
+  background: #FED8BE;
+}
+
+.section.--4 .name-space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  width: 100%;
+}
+
+.section.--4 .project-name {
+  font-family: Arial;
+  font-size: 1.3vw;
+  text-align: center;
+  color: #181818;
 }
 
 .section.--4 .sidebar.light {
@@ -519,10 +573,34 @@ html, body {
   width: 69%;
 }
 
+.section.--5 .arrow.--1 {
+  width: 16%;
+  cursor: pointer;
+  margin: 0 0 5.5% 5.5%;
+}
+
 .section.--5 .rectangle {
   height: 48%;
   width: 56%;
   background: #FDF5EF;
+}
+
+.section.--5 .project-description-heading {
+  width: 88%;
+  margin: -19% auto 2.6% auto;
+  font-family: Arial;
+  font-size: 1.3vw;
+  font-weight: bold;
+  color: #181818;
+  line-height: 1.6vw;
+}
+
+.section.--5 .view-live-code {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  align-self: center;
+  width: 87%;
 }
 
 .section.--5 .project-card {
