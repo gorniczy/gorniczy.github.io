@@ -309,6 +309,11 @@ html, body {
   width: 69%;
 }
 
+.project-description-main {
+  height: 100%;
+  width: 65%;
+}
+
 .section.--3 .project-card {
   width: 35%;
   background: #FDF5EF;
