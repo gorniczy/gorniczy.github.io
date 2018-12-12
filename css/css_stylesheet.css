@@ -313,6 +313,11 @@ html, body {
   width: 69%;
 }
 
+.section.--3 .mockups {
+  height: 62%;
+  width: 78%;
+}
+
 .project-description-main {
   display: flex;
   flex-direction: column;
