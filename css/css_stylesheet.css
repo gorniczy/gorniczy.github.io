@@ -266,11 +266,11 @@ html, body {
   width: 43%;
 }
 
-.project-name {
+.section.--2 .project-name {
   font-family: Arial;
-  font-size: 18px;
-  color: #181818;
+  font-size: 1.3vw;
   text-align: center;
+  color: #181818;
   margin-top: 15%;
 }
 
