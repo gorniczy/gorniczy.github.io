@@ -1,6 +1,6 @@
-/* {
+* {
   outline: 1px solid red;
-}*/
+}
 
 html, body {
   height: 100%;
@@ -718,7 +718,7 @@ html, body {
   width: 15%;
   justify-content: space-between;
   margin: auto;
-    margin-right: 7.5%;
+  margin-right: 7.5%;
 }
 
 .section.--6 .clickable.social {
