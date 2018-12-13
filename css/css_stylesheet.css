@@ -1,6 +1,6 @@
-* {
+/* {
   outline: 1px solid red;
-}
+}*/
 
 html, body {
   height: 100%;
@@ -631,14 +631,26 @@ html, body {
 }
 
 .section.--5 .content {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  vertical-align: top;
+  display: inline-block;
   width: 85%;
   height: 100%;
   margin: -0.35% 0 0 0;
   box-sizing: border-box;
+}
+
+.section.--5 .animable {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section.--5 .animable.--1 {
+  margin-left: -100%;
 }
 
 .section.--5 .project-description {
@@ -647,7 +659,7 @@ html, body {
   width: 69%;
 }
 
-.section.--5 .arrow.--1 {
+.section.--5 .animable.--1 .arrow.--1 {
   width: 16%;
   cursor: pointer;
   margin: 0 0 5.5% 5.5%;
@@ -669,7 +681,7 @@ html, body {
   line-height: 1.6vw;
 }
 
-.section.--5 .view-live-code {
+.section.--5 .animable.--1 .view-live-code {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -695,6 +707,30 @@ html, body {
   font-size: 1.3vw;
   text-align: center;
   color: #181818;
+}
+
+.section.--5 .mockups {
+  height: 62%;
+  width: 78%;
+}
+
+.section.--5 .animable.--2 .arrow.--1 {
+  display: inline-block;
+  width: 9%;
+  vertical-align: top;
+  transform: rotate(180deg);
+  margin-top: 1.5%;
+  cursor: pointer;
+}
+
+.section.--5 .animable.--2 .view-live-code {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  align-self: center;
+  width: 50%;
+  float: right;
+  margin: 1% 4% 0 0;
 }
 
 .section.--5 .sidebar.dark {
