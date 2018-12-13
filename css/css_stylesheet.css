@@ -1,6 +1,6 @@
-/* {
+* {
   outline: 1px solid red;
-}*/
+}
 
 html, body {
   height: 100%;
@@ -291,6 +291,7 @@ html, body {
   height: 100%;
   margin: -0.35% 0 0 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .section.--3 .animable {
@@ -422,7 +423,7 @@ html, body {
   cursor: pointer;
 }
 
-.mobile {
+.section.--3 .mobile {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -433,7 +434,7 @@ html, body {
   margin-top: -40%;
 }
 
-.mobile-screen {
+.section.--3 .mobile-screen {
   width: 92%;
   margin-top: 7.5%;
 }
@@ -443,7 +444,7 @@ html, body {
   margin: auto;
 }
 
-.desktop {
+.section.--3 .desktop {
   display: inline-block;
   height: 94%;
   width: 84%;
@@ -461,7 +462,7 @@ html, body {
   margin: 0 auto;
 }
 
-.desktop-screen {
+.section.--3 .desktop-screen {
   width: 95%;
 }
 
@@ -550,27 +551,39 @@ html, body {
 }
 
 .section.--4 .content {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  vertical-align: top;
+  display: inline-block;
   width: 85%;
   height: 100%;
   margin: -0.35% 0 0 0;
   box-sizing: border-box;
+  overflow: hidden;
+}
+
+.section.--4 .animable {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section.--4 .animable.--1 {
+  margin-left: +100%;
+}
+
+.section.--4 .animable.--1 .arrow.--1 {
+  width: 16%;
+  cursor: pointer;
+  margin: 0 0 5.5% 5.5%;
 }
 
 .section.--4 .project-description {
   display: flex;
   height: 52%;
   width: 69%;
-}
-
-.section.--4 .arrow.--1 {
-  width: 16%;
-  cursor: pointer;
-  margin: 0 5.5% 5.5% auto;
-  transform: rotate(180deg);
 }
 
 .section.--4 .rectangle {
@@ -591,12 +604,72 @@ html, body {
   line-height: 1.6vw;
 }
 
-.section.--4 .view-live-code {
+.section.--4 .animable.--1 .view-live-code {
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  align-self: center;
+  width: 87%;
+}
+
+.section.--4 .mockups {
+  height: 62%;
+  width: 78%;
+}
+
+.section.--4 .animable.--2 .arrow.--1 {
+  display: inline-block;
+  width: 9%;
+  vertical-align: top;
+  margin-top: 1.5%;
+  cursor: pointer;
+  float: right;
+}
+
+.section.--4 .mobile {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  width: 24%;
+  background: #EB9957;
+  border-radius: 1rem;
+  margin-top: -40%;
+  float: right;
+  position: relative;
+}
+
+.section.--4 .mobile-screen {
+  width: 90%;
+  margin-top: 7%;
+}
+
+.section.--4 .desktop {
+  display: inline-block;
+  height: 94%;
+  width: 84%;
+}
+
+.screen-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 93%;
+  width: 95%;
+  background: #FFDBBF;
+}
+
+.section.--4 .desktop-screen {
+  width: 100%;
+}
+
+.section.--4 .animable.--2 .view-live-code {
+  display: inline-flex;
   align-items: center;
   justify-content: flex-start;
   align-self: center;
-  width: 87%;
+  width: 50%;
+  margin: 1% 0 0 4%;
 }
 
 .section.--4 .project-card {
@@ -636,6 +709,7 @@ html, body {
   height: 100%;
   margin: -0.35% 0 0 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .section.--5 .animable {
@@ -721,6 +795,33 @@ html, body {
   transform: rotate(180deg);
   margin-top: 1.5%;
   cursor: pointer;
+}
+
+.section.--5 .mobile {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  width: 24%;
+  background: #EB9957;
+  border-radius: 1rem;
+  margin-top: -40%;
+}
+
+.section.--5 .mobile-screen {
+  width: 92%;
+  margin-top: 7.5%;
+}
+
+.section.--5 .desktop {
+  display: inline-block;
+  height: 94%;
+  width: 84%;
+  float: right;
+}
+
+.section.--5 .desktop-screen {
+  width: 95%;
 }
 
 .section.--5 .animable.--2 .view-live-code {
