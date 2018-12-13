@@ -1,6 +1,6 @@
-* {
+/* {
   outline: 1px solid red;
-}
+}*/
 
 html, body {
   height: 100%;
@@ -294,19 +294,24 @@ html, body {
   overflow: hidden;
 }
 
-.section.--3 .animable {
+.sheet {
+  display: inline-block;
+  width: 200%;
+  height: 100%;
+  margin: -0.35% 0 0 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.section.--3 .page {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   vertical-align: top;
-  width: 100%;
+  width: 50%;
   height: 100%;
   margin: 0;
   box-sizing: border-box;
-}
-
-.section.--3 .animable.--1 {
-  margin-left: -100%;
 }
 
 .section.--3 .project-description {
@@ -322,7 +327,7 @@ html, body {
   width: 65%;
 }
 
-.section.--3 .animable.--1 .arrow.--1 {
+.section.--3 .page.--1 .arrow.--1 {
   width: 16%;
   cursor: pointer;
   margin: 0 0 5.5% 5.5%;
@@ -360,7 +365,7 @@ html, body {
   line-height: 1.6vw;
 }
 
-.section.--3 .animable.--1 .view-live-code {
+.section.--3 .page.--1 .view-live-code {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -414,7 +419,7 @@ html, body {
   width: 78%;
 }
 
-.section.--3 .animable.--2 .arrow.--1 {
+.section.--3 .page.--2 .arrow.--1 {
   display: inline-block;
   width: 9%;
   vertical-align: top;
@@ -473,7 +478,7 @@ html, body {
   border-radius: 0 0 1rem 1rem;
 }
 
-.section.--3 .animable.--2 .view-live-code {
+.section.--3 .page.--2 .view-live-code {
   display: inline-flex;
   align-items: center;
   justify-content: flex-end;
@@ -559,25 +564,26 @@ html, body {
   overflow: hidden;
 }
 
-.section.--4 .animable {
+.section.--4 .sheet {
+  margin-left: -100%;
+}
+
+.section.--4 .page {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   vertical-align: top;
-  width: 100%;
+  width: 50%;
   height: 100%;
   margin: 0;
   box-sizing: border-box;
 }
 
-.section.--4 .animable.--1 {
-  margin-left: +100%;
-}
-
-.section.--4 .animable.--1 .arrow.--1 {
+.section.--4 .page.--1 .arrow.--1 {
   width: 16%;
   cursor: pointer;
-  margin: 0 0 5.5% 5.5%;
+  margin: 0 5.5% 5.5% auto;
+  transform: rotate(180deg);
 }
 
 .section.--4 .project-description {
@@ -604,7 +610,7 @@ html, body {
   line-height: 1.6vw;
 }
 
-.section.--4 .animable.--1 .view-live-code {
+.section.--4 .page.--1 .view-live-code {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -617,7 +623,7 @@ html, body {
   width: 78%;
 }
 
-.section.--4 .animable.--2 .arrow.--1 {
+.section.--4 .page.--2 .arrow.--1 {
   display: inline-block;
   width: 9%;
   vertical-align: top;
@@ -654,8 +660,8 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 93%;
-  width: 95%;
+  height: 92%;
+  width: 96%;
   background: #FFDBBF;
 }
 
@@ -663,7 +669,7 @@ html, body {
   width: 100%;
 }
 
-.section.--4 .animable.--2 .view-live-code {
+.section.--4 .page.--2 .view-live-code {
   display: inline-flex;
   align-items: center;
   justify-content: flex-start;
@@ -712,19 +718,15 @@ html, body {
   overflow: hidden;
 }
 
-.section.--5 .animable {
+.section.--5 .page {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   vertical-align: top;
-  width: 100%;
+  width: 50%;
   height: 100%;
   margin: 0;
   box-sizing: border-box;
-}
-
-.section.--5 .animable.--1 {
-  margin-left: -100%;
 }
 
 .section.--5 .project-description {
@@ -733,7 +735,7 @@ html, body {
   width: 69%;
 }
 
-.section.--5 .animable.--1 .arrow.--1 {
+.section.--5 .page.--1 .arrow.--1 {
   width: 16%;
   cursor: pointer;
   margin: 0 0 5.5% 5.5%;
@@ -755,7 +757,7 @@ html, body {
   line-height: 1.6vw;
 }
 
-.section.--5 .animable.--1 .view-live-code {
+.section.--5 .page.--1 .view-live-code {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -788,7 +790,7 @@ html, body {
   width: 78%;
 }
 
-.section.--5 .animable.--2 .arrow.--1 {
+.section.--5 .page.--2 .arrow.--1 {
   display: inline-block;
   width: 9%;
   vertical-align: top;
@@ -809,7 +811,7 @@ html, body {
 }
 
 .section.--5 .mobile-screen {
-  width: 92%;
+  width: 90%;
   margin-top: 7.5%;
 }
 
@@ -824,7 +826,7 @@ html, body {
   width: 95%;
 }
 
-.section.--5 .animable.--2 .view-live-code {
+.section.--5 .page.--2 .view-live-code {
   display: inline-flex;
   align-items: center;
   justify-content: flex-end;

@@ -6,6 +6,19 @@
   <title>Denis Gornichar</title>
   <link href="css/css_stylesheet.css" type="text/css" rel="stylesheet">
   <script>
+    const sheet = document.getElementsByClassName('sheet');
+
+    function move(num) {
+      const result = num === 1 ? "0" : "-100%";
+      sheet[num].style.marginLeft = result;
+      sheet[num].style.transition = "all 1s ease-in-out";
+    }
+
+    function moveBack(num) {
+      const result = num === 1 ? "-100%" : "0";
+      sheet[num].style.marginLeft = result;
+    }
+
   </script>
 </head>
 
@@ -107,50 +120,52 @@
       <div class="line --2"></div>
     </div>
     <div class="content">
-      <div class="animable --1">
-        <div class="project-description">
-          <div class="project-description-main">
-            <img class="arrow --1" src="img/arrow.svg" alt="arrow">
-            <div class="project-description-text">
-              <div class="rectangle"></div>
-              <p class="project-description-heading">The beauty of<br>deconstructive randomness</p>
-              <p class="project-description-paragraph">The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my
-                Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw
-                attention to the beauty of randomness in deconstruction of our everyday cultural structures.</p>
+      <div class="sheet">
+        <div class="page --1">
+          <div class="project-description">
+            <div class="project-description-main">
+              <img class="arrow --1" src="img/arrow.svg" alt="arrow" onclick="move(0)">
+              <div class="project-description-text">
+                <div class="rectangle"></div>
+                <p class="project-description-heading">The beauty of<br>deconstructive randomness</p>
+                <p class="project-description-paragraph">The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my
+                  Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw
+                  attention to the beauty of randomness in deconstruction of our everyday cultural structures.</p>
+              </div>
+              <div class="view-live-code --1">
+                <span>view</span>
+                <img class="dash" src="img/dash.svg" alt="dash">
+                <span>{ </span><a href="">live</a><span> / </span><a href="">code</a><span> }</span>
+              </div>
             </div>
-            <div class="view-live-code --1">
+            <div class="project-card">
+              <div class="square --1">
+                <img src="img/twin_peaks_logo.svg" class="project-logo --1" alt="twin peaks logo">
+              </div>
+              <div class="name-space">
+                <p class="project-name">Twin Peaks Quote Machine</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page --2">
+          <div class="mockups">
+            <img class="arrow --1" src="img/arrow.svg" alt="arrow" onclick="moveBack(0)">
+            <div class="desktop">
+              <div class="vertical">
+                <img src="img/cooper_desktop.png" alt="Cooper quote" class="desktop-screen">
+              </div>
+              <div class="horizontal"></div>
+            </div>
+            <div class="mobile">
+              <img src="img/audrey_mobile.png" alt="Audrey quote" class="mobile-screen">
+              <img src="img/mobile_button_1.svg" alt="mobile button" class="mobile-button --1">
+            </div>
+            <div class="view-live-code --2">
               <span>view</span>
               <img class="dash" src="img/dash.svg" alt="dash">
               <span>{ </span><a href="">live</a><span> / </span><a href="">code</a><span> }</span>
             </div>
-          </div>
-          <div class="project-card">
-            <div class="square --1">
-              <img src="img/twin_peaks_logo.svg" class="project-logo --1" alt="twin peaks logo">
-            </div>
-            <div class="name-space">
-              <p class="project-name">Twin Peaks Quote Machine</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="animable --2">
-        <div class="mockups">
-          <img class="arrow --1" src="img/arrow.svg" alt="arrow">
-          <div class="desktop">
-            <div class="vertical">
-              <img src="img/cooper_desktop.png" alt="Cooper quote" class="desktop-screen">
-            </div>
-            <div class="horizontal"></div>
-          </div>
-          <div class="mobile">
-            <img src="img/audrey_mobile.png" alt="Audrey quote" class="mobile-screen">
-            <img src="img/mobile_button_1.svg" alt="mobile button" class="mobile-button --1">
-          </div>
-          <div class="view-live-code --2">
-            <span>view</span>
-            <img class="dash" src="img/dash.svg" alt="dash">
-            <span>{ </span><a href="">live</a><span> / </span><a href="">code</a><span> }</span>
           </div>
         </div>
       </div>
@@ -169,51 +184,53 @@
       </div>
     </div>
     <div class="content">
-      <div class="animable --2">
-        <div class="mockups">
-          <div class="desktop">
-            <div class="vertical">
-              <div class="screen-background">
-                <img src="img/weather_desktop.png" alt="desktop weather app" class="desktop-screen">
+      <div class="sheet">
+        <div class="page --2">
+          <div class="mockups">
+            <div class="desktop">
+              <div class="vertical">
+                <div class="screen-background">
+                  <img src="img/weather_desktop.png" alt="desktop weather app" class="desktop-screen">
+                </div>
               </div>
+              <div class="horizontal"></div>
             </div>
-            <div class="horizontal"></div>
-          </div>
-          <img class="arrow --1" src="img/arrow.svg" alt="arrow">
-          <div class="mobile">
-            <img src="img/weather_mobile.png" alt="mobile weather app" class="mobile-screen">
-            <img src="img/mobile_button_1.svg" alt="mobile button" class="mobile-button --1">
-          </div>
-          <div class="view-live-code --2">
-            <span>view</span>
-            <img class="dash" src="img/dash.svg" alt="dash">
-            <span>{ </span><a href="">live</a><span> / </span><a href="">code</a><span> }</span>
-          </div>
-        </div>
-      </div>
-      <div class="animable --1">
-        <div class="project-description">
-          <div class="project-card">
-            <div class="square --2">
-              <img src="img/warsaw_weather_logo.svg" class="project-logo --1" alt="warsaw weather logo">
-            </div>
-            <div class="name-space">
-              <p class="project-name">Warsaw Weather App</p>
-            </div>
-          </div>
-          <div class="project-description-main">
-            <img class="arrow --1" src="img/arrow.svg" alt="arrow">
-            <div class="project-description-text">
-              <div class="rectangle"></div>
-              <p class="project-description-heading">The immersiveness of<br>local contexts</p>
-              <p class="project-description-paragraph">The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my
-                Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw
-                attention to the beauty of randomness in deconstruction of our everyday cultural structures.</p>
+            <img class="arrow --1" src="img/arrow.svg" alt="arrow" onclick="moveBack(1)">
+            <div class="mobile">
+              <img src="img/weather_mobile.png" alt="mobile weather app" class="mobile-screen">
+              <img src="img/mobile_button_1.svg" alt="mobile button" class="mobile-button --1">
             </div>
             <div class="view-live-code --2">
               <span>view</span>
               <img class="dash" src="img/dash.svg" alt="dash">
               <span>{ </span><a href="">live</a><span> / </span><a href="">code</a><span> }</span>
+            </div>
+          </div>
+        </div>
+        <div class="page --1">
+          <div class="project-description">
+            <div class="project-card">
+              <div class="square --2">
+                <img src="img/warsaw_weather_logo.svg" class="project-logo --1" alt="warsaw weather logo">
+              </div>
+              <div class="name-space">
+                <p class="project-name">Warsaw Weather App</p>
+              </div>
+            </div>
+            <div class="project-description-main">
+              <img class="arrow --1" src="img/arrow.svg" alt="arrow" onclick="move(1)">
+              <div class="project-description-text">
+                <div class="rectangle"></div>
+                <p class="project-description-heading">The immersiveness of<br>local contexts</p>
+                <p class="project-description-paragraph">The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my
+                  Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw
+                  attention to the beauty of randomness in deconstruction of our everyday cultural structures.</p>
+              </div>
+              <div class="view-live-code --2">
+                <span>view</span>
+                <img class="dash" src="img/dash.svg" alt="dash">
+                <span>{ </span><a href="">live</a><span> / </span><a href="">code</a><span> }</span>
+              </div>
             </div>
           </div>
         </div>
@@ -229,50 +246,52 @@
       <div class="line --2"></div>
     </div>
     <div class="content">
-      <div class="animable --1">
-        <div class="project-description">
-          <div class="project-description-main">
-            <img class="arrow --1" src="img/arrow.svg" alt="arrow">
-            <div class="project-description-text">
-              <div class="rectangle"></div>
-              <p class="project-description-heading">The power of<br>synthetic layouts</p>
-              <p class="project-description-paragraph">The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my
-                Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw
-                attention to the beauty of randomness in deconstruction of our everyday cultural structures.</p>
+      <div class="sheet">
+        <div class="page --1">
+          <div class="project-description">
+            <div class="project-description-main">
+              <img class="arrow --1" src="img/arrow.svg" alt="arrow" onclick="move(2)">
+              <div class="project-description-text">
+                <div class="rectangle"></div>
+                <p class="project-description-heading">The power of<br>synthetic layouts</p>
+                <p class="project-description-paragraph">The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my
+                  Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw
+                  attention to the beauty of randomness in deconstruction of our everyday cultural structures.</p>
+              </div>
+              <div class="view-live-code --3">
+                <span>view</span>
+                <img class="dash" src="img/dash.svg" alt="dash">
+                <span>{ </span><a href="">live</a><span> / </span><a href="">code</a><span> }</span>
+              </div>
             </div>
-            <div class="view-live-code --3">
+            <div class="project-card">
+              <div class="square --3">
+                <img src="img/paper_artist_logo.svg" class="project-logo --3" alt="paper artist logo">
+              </div>
+              <div class="name-space">
+                <p class="project-name">Landing page for an artist</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page --2">
+          <div class="mockups">
+            <img class="arrow --1" src="img/arrow.svg" alt="arrow" onclick="moveBack(2)">
+            <div class="desktop">
+              <div class="vertical">
+                <img src="img/nastia_desktop.png" alt="desktop landing page" class="desktop-screen">
+              </div>
+              <div class="horizontal"></div>
+            </div>
+            <div class="mobile">
+              <img src="img/nastia_mobile.png" alt="mobile landing page" class="mobile-screen">
+              <img src="img/mobile_button_1.svg" alt="mobile button" class="mobile-button --1">
+            </div>
+            <div class="view-live-code --2">
               <span>view</span>
               <img class="dash" src="img/dash.svg" alt="dash">
               <span>{ </span><a href="">live</a><span> / </span><a href="">code</a><span> }</span>
             </div>
-          </div>
-          <div class="project-card">
-            <div class="square --3">
-              <img src="img/paper_artist_logo.svg" class="project-logo --3" alt="paper artist logo">
-            </div>
-            <div class="name-space">
-              <p class="project-name">Landing page for an artist</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="animable --2">
-        <div class="mockups">
-          <img class="arrow --1" src="img/arrow.svg" alt="arrow">
-          <div class="desktop">
-            <div class="vertical">
-              <img src="img/nastia_desktop.png" alt="desktop landing page" class="desktop-screen">
-            </div>
-            <div class="horizontal"></div>
-          </div>
-          <div class="mobile">
-            <img src="img/nastia_mobile.png" alt="mobile landing page" class="mobile-screen">
-            <img src="img/mobile_button_1.svg" alt="mobile button" class="mobile-button --1">
-          </div>
-          <div class="view-live-code --2">
-            <span>view</span>
-            <img class="dash" src="img/dash.svg" alt="dash">
-            <span>{ </span><a href="">live</a><span> / </span><a href="">code</a><span> }</span>
           </div>
         </div>
       </div>
