@@ -297,6 +297,7 @@ html, body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  vertical-align: top;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -313,11 +314,6 @@ html, body {
   width: 69%;
 }
 
-.section.--3 .mockups {
-  height: 62%;
-  width: 78%;
-}
-
 .project-description-main {
   display: flex;
   flex-direction: column;
@@ -325,7 +321,7 @@ html, body {
   width: 65%;
 }
 
-.section.--3 .arrow.--1 {
+.section.--3 .animable.--1 .arrow.--1 {
   width: 16%;
   cursor: pointer;
   margin: 0 0 5.5% 5.5%;
@@ -363,7 +359,7 @@ html, body {
   line-height: 1.6vw;
 }
 
-.section.--3 .view-live-code {
+.section.--3 .animable.--1 .view-live-code {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -410,6 +406,80 @@ html, body {
   font-size: 1.3vw;
   text-align: center;
   color: #181818;
+}
+
+.section.--3 .mockups {
+  height: 62%;
+  width: 78%;
+}
+
+.section.--3 .animable.--2 .arrow.--1 {
+  display: inline-block;
+  width: 9%;
+  vertical-align: top;
+  transform: rotate(180deg);
+  margin-top: 1.5%;
+  cursor: pointer;
+}
+
+.mobile {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  width: 24%;
+  background: #EB9957;
+  border-radius: 1rem;
+  margin-top: -40%;
+}
+
+.mobile-screen {
+  width: 92%;
+  margin-top: 7.5%;
+}
+
+.mobile-button {
+  width: 5%;
+  margin: auto;
+}
+
+.desktop {
+  display: inline-block;
+  height: 94%;
+  width: 84%;
+  float: right;
+}
+
+.vertical {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  width: 91%;
+  background: #EB9957;
+  border-radius: 1rem 1rem 0 0;
+  margin: 0 auto;
+}
+
+.desktop-screen {
+  width: 95%;
+}
+
+.horizontal {
+  height: 5%;
+  width: 100%;
+  background: #FFBD8B;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.section.--3 .animable.--2 .view-live-code {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  align-self: center;
+  width: 50%;
+  float: right;
+  margin: 1% 4% 0 0;
 }
 
 .section.--3 .sidebar.dark {
