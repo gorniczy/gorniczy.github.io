@@ -15,7 +15,7 @@
       let startTime = null;
 
       function animation(currentTime) {
-        if (startTime === null) startTime = currentTime;
+        if (!startTime) startTime = currentTime;
         const timeElapsed = currentTime - startTime;
         const currentPosition = targetPosition * timeElapsed / duration + startPosition;
         window.scrollTo(0, currentPosition);
@@ -24,7 +24,7 @@
       requestAnimationFrame(animation);
     }
 
-    // toggle between project desription and project mockups
+    //  toggle between project desription and project mockups
 
     const sheet = document.getElementsByClassName('sheet');
 
@@ -48,19 +48,19 @@
       <div class="sidebar">
         <img class="logo" src="img/de_logo.svg" alt="personal logo">
         <div class="links">
-          <a href="#projects" class="clickable contents">projects</a>
+          <p class="clickable contents" onclick="smoothScroll('#projects', 500)">projects</p>
           <img src="img/dot.svg" alt="dot">
         </div>
         <div class="links">
-          <a href="#project-1" class="clickable contents">001</a>
+          <p class="clickable contents" onclick="smoothScroll('#project-1', 500)">001</p>
           <img src="img/dot.svg" alt="dot">
         </div>
         <div class="links">
-          <a href="#project-2" class="clickable contents">002</a>
+          <p class="clickable contents" onclick="smoothScroll('#project-2', 750)">002</p>
           <img src="img/dot.svg" alt="dot">
         </div>
         <div class="links">
-          <a href="#project-3" class="clickable contents">003</a>
+          <p class="clickable contents" onclick="smoothScroll('#project-3', 1000)">003</p>
           <img src="img/dot.svg" alt="dot">
         </div>
         <div class="line --2"></div>
@@ -98,7 +98,7 @@
           </div>
         </div>
         <a class="clickable hire-me" href="mailto:denysgornichar@gmail.com">HIRE ME</a>
-        <a class="clickable scroll --1" onclick="smoothScroll('#projects', 500)"><img src="img/scroll_down_button.svg" class="href-img" alt="scroll down button"></a>
+        <img src="img/scroll_down_button.svg" class="clickable scroll --1" alt="scroll down button" onclick="smoothScroll('#projects', 500)">
       </div>
     </div>
   </div>
@@ -109,27 +109,21 @@
           <img src="img/twin_peaks_logo.svg" class="project-logo --1" alt="twin peaks logo">
         </div>
         <p class="project-name">Twin Peaks Quote Machine</p>
-        <a href="#project-1" class="clickable scroll --2">
-          <img src="img/scroll_down_button_s.svg" class="href-img" alt="scroll down button">
-        </a>
+        <img src="img/scroll_down_button_s.svg" class="clickable scroll --2" alt="scroll down button" onclick="smoothScroll('#project-1', 500)">
       </div>
       <div class="project-card --2">
         <div class="square --2">
           <img src="img/warsaw_weather_logo.svg" class="project-logo --2" alt="warsaw weather logo">
         </div>
         <p class="project-name">Warsaw Weather App</p>
-        <a href="#project-2" class="clickable scroll --2">
-          <img src="img/scroll_down_button_s.svg" class="href-img" alt="scroll down button">
-        </a>
+        <img src="img/scroll_down_button_s.svg" class="clickable scroll --2" alt="scroll down button" onclick="smoothScroll('#project-2', 500)">
       </div>
       <div class="project-card --3">
         <div class="square --3">
           <img src="img/paper_artist_logo.svg" class="project-logo --3" alt="paper artist logo">
         </div>
         <p class="project-name">Landing Page for an Artist</p>
-        <a href="#project-3" class="clickable scroll --2">
-          <img src="img/scroll_down_button_s.svg" class="href-img" alt="scroll down button">
-        </a>
+        <img src="img/scroll_down_button_s.svg" class="clickable scroll --2" alt="scroll down button" onclick="smoothScroll('#project-3', 750)">
       </div>
     </div>
   </div>
@@ -147,7 +141,8 @@
               <div class="project-description-text">
                 <div class="rectangle"></div>
                 <p class="project-description-heading">The beauty of<br>deconstructive randomness</p>
-                <p class="project-description-paragraph">The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my
+                <p class="project-description-paragraph">The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of
+                  my
                   Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw
                   attention to the beauty of randomness in deconstruction of our everyday cultural structures.</p>
               </div>
@@ -241,7 +236,8 @@
               <div class="project-description-text">
                 <div class="rectangle"></div>
                 <p class="project-description-heading">The immersiveness of<br>local contexts</p>
-                <p class="project-description-paragraph">The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my
+                <p class="project-description-paragraph">The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of
+                  my
                   Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw
                   attention to the beauty of randomness in deconstruction of our everyday cultural structures.</p>
               </div>
@@ -273,7 +269,8 @@
               <div class="project-description-text">
                 <div class="rectangle"></div>
                 <p class="project-description-heading">The power of<br>synthetic layouts</p>
-                <p class="project-description-paragraph">The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my
+                <p class="project-description-paragraph">The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of
+                  my
                   Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw
                   attention to the beauty of randomness in deconstruction of our everyday cultural structures.</p>
               </div>

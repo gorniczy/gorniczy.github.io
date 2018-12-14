@@ -1,7 +1,6 @@
 /* {
   outline: 1px solid red;
 }*/
-
 html, body {
   height: 100%;
   margin: 0;
@@ -67,6 +66,7 @@ html, body {
   color: #A94C0A;
   text-decoration: none;
   margin-left: auto;
+  cursor: pointer;
 }
 
 .clickable.contents:hover {
@@ -192,10 +192,11 @@ html, body {
 }
 
 .clickable.scroll.--1 {
-  display: inline-block;
+  display: block;
   width: 3.5%;
   transform: translateY(50%);
   margin-top: auto;
+  cursor: pointer;
 }
 
 /* Projects */
@@ -272,6 +273,7 @@ html, body {
   width: 10%;
   margin-top: auto;
   transform: translateY(50%);
+  cursor: pointer;
 }
 
 /* Project 001 */
