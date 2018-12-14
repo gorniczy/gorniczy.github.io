@@ -6,6 +6,26 @@
   <title>Denis Gornichar</title>
   <link href="css/css_stylesheet.css" type="text/css" rel="stylesheet">
   <script>
+    // smooth scroll animation
+
+    function smoothScroll(target, duration) {
+      const getHere = document.querySelector(target);
+      const targetPosition = getHere.getBoundingClientRect().top;
+      const startPosition = window.pageYOffset;
+      let startTime = null;
+
+      function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const currentPosition = targetPosition * timeElapsed / duration + startPosition;
+        window.scrollTo(0, currentPosition);
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+      }
+      requestAnimationFrame(animation);
+    }
+
+    // toggle between project desription and project mockups
+
     const sheet = document.getElementsByClassName('sheet');
 
     function move(num) {
@@ -18,7 +38,6 @@
       const result = num === 1 ? "-100%" : "0";
       sheet[num].style.marginLeft = result;
     }
-
   </script>
 </head>
 
@@ -79,7 +98,7 @@
           </div>
         </div>
         <a class="clickable hire-me" href="mailto:denysgornichar@gmail.com">HIRE ME</a>
-        <a href="#projects" class="clickable scroll --1"><img src="img/scroll_down_button.svg" class="href-img" alt="scroll down button"></a>
+        <a class="clickable scroll --1" onclick="smoothScroll('#projects', 500)"><img src="img/scroll_down_button.svg" class="href-img" alt="scroll down button"></a>
       </div>
     </div>
   </div>
