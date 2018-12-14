@@ -12,11 +12,11 @@
       const getHere = document.querySelector(target);
       const targetPosition = getHere.getBoundingClientRect().top;
       const startPosition = window.pageYOffset;
-      let startTime = null;
+      let start = null;
 
       function animation(currentTime) {
-        if (!startTime) startTime = currentTime;
-        const timeElapsed = currentTime - startTime;
+        if (!start) start = currentTime;
+        const timeElapsed = currentTime - start;
         const currentPosition = targetPosition * timeElapsed / duration + startPosition;
         window.scrollTo(0, currentPosition);
         if (timeElapsed < duration) requestAnimationFrame(animation);
@@ -149,7 +149,7 @@
               <div class="view-live-code --1">
                 <span>view</span>
                 <img class="dash" src="img/dash.svg" alt="dash">
-                <span>{ </span><a href="">live</a><span> / </span><a href="">code</a><span> }</span>
+                <span>{ </span><a href="https://gorniczy.github.io/quotes-of-twin-peaks" target="_blank">live</a><span> / </span><a href="https://github.com/gorniczy/quotes-of-twin-peaks" target="_blank">code</a><span> }</span>
               </div>
             </div>
             <div class="project-card">
@@ -178,7 +178,7 @@
             <div class="view-live-code --2">
               <span>view</span>
               <img class="dash" src="img/dash.svg" alt="dash">
-              <span>{ </span><a href="">live</a><span> / </span><a href="">code</a><span> }</span>
+              <span>{ </span><a href="https://gorniczy.github.io/quotes-of-twin-peaks" target="_blank">live</a><span> / </span><a href="https://github.com/gorniczy/quotes-of-twin-peaks" target="_blank">code</a><span> }</span>
             </div>
           </div>
         </div>
@@ -217,7 +217,7 @@
             <div class="view-live-code --2">
               <span>view</span>
               <img class="dash" src="img/dash.svg" alt="dash">
-              <span>{ </span><a href="">live</a><span> / </span><a href="">code</a><span> }</span>
+              <span>{ </span><a href="https://gorniczy.github.io/warsaw-weather" target="_blank">live</a><span> / </span><a href="https://github.com/gorniczy/warsaw-weather" target="_blank">code</a><span> }</span>
             </div>
           </div>
         </div>
@@ -244,7 +244,7 @@
               <div class="view-live-code --2">
                 <span>view</span>
                 <img class="dash" src="img/dash.svg" alt="dash">
-                <span>{ </span><a href="">live</a><span> / </span><a href="">code</a><span> }</span>
+                <span>{ </span><a href="https://gorniczy.github.io/warsaw-weather" target="_blank">live</a><span> / </span><a href="https://github.com/gorniczy/warsaw-weather" target="_blank">code</a><span> }</span>
               </div>
             </div>
           </div>
@@ -277,7 +277,7 @@
               <div class="view-live-code --3">
                 <span>view</span>
                 <img class="dash" src="img/dash.svg" alt="dash">
-                <span>{ </span><a href="">live</a><span> / </span><a href="">code</a><span> }</span>
+                <span>{ </span><a href="https://gorniczy.github.io/gornastia" target="_blank">live</a><span> / </span><a href="https://github.com/gorniczy/gornastia" target="_blank">code</a><span> }</span>
               </div>
             </div>
             <div class="project-card">
@@ -306,7 +306,7 @@
             <div class="view-live-code --2">
               <span>view</span>
               <img class="dash" src="img/dash.svg" alt="dash">
-              <span>{ </span><a href="">live</a><span> / </span><a href="">code</a><span> }</span>
+              <span>{ </span><a href="https://gorniczy.github.io/gornastia" target="_blank">live</a><span> / </span><a href="https://github.com/gorniczy/gornastia" target="_blank">code</a><span> }</span>
             </div>
           </div>
         </div>
