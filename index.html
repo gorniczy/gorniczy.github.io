@@ -9,17 +9,21 @@
     // smooth scroll animation
 
     function smoothScroll(target, duration) {
+
       const getHere = document.querySelector(target);
       const targetPosition = getHere.getBoundingClientRect().top;
       const startPosition = window.pageYOffset;
+      const distance = startPosition + targetPosition;
       let start = null;
 
       function animation(currentTime) {
-        if (!start) start = currentTime;
+
+        if (start === null) start = currentTime;
         const timeElapsed = currentTime - start;
         const currentPosition = targetPosition * timeElapsed / duration + startPosition;
-        window.scrollTo(0, currentPosition);
+        window.scrollTo(0, Math.min(currentPosition, distance));
         if (timeElapsed < duration) requestAnimationFrame(animation);
+        console.log(timeElapsed, duration, currentPosition);
       }
       requestAnimationFrame(animation);
     }
