@@ -1,6 +1,7 @@
 /* {
   outline: 1px solid red;
 }*/
+
 html, body {
   height: 100%;
   margin: 0;
@@ -329,10 +330,16 @@ html, body {
   width: 65%;
 }
 
-.section.--3 .page.--1 .arrow.--1 {
+.section.--3 .arrow-to {
   width: 16%;
   cursor: pointer;
-  margin: 0 0 5.5% 5.5%;
+  padding: 1% 1%;
+  margin: -1% 0 4.5% 4.5%;
+  transition: all 0.3s ease-in-out;
+}
+
+.section.--3 .arrow-to:hover {
+  transform: scale(1.2) translateX(-10%);
 }
 
 .project-description-text {
@@ -421,13 +428,19 @@ html, body {
   width: 78%;
 }
 
-.section.--3 .page.--2 .arrow.--1 {
+.section.--3 .arrow-from {
   display: inline-block;
   width: 9%;
   vertical-align: top;
   transform: rotate(180deg);
-  margin-top: 1.5%;
   cursor: pointer;
+  padding: 1%;
+  margin: 0.5% auto auto -1%;
+  transition: all 0.3s ease-in-out;
+}
+
+.section.--3 .arrow-from:hover {
+  transform: scale(1.2) translateX(10%) rotate(180deg);
 }
 
 .section.--3 .mobile {
@@ -587,11 +600,17 @@ html, body {
   box-sizing: border-box;
 }
 
-.section.--4 .page.--1 .arrow.--1 {
+.section.--4 .arrow-to {
   width: 16%;
   cursor: pointer;
-  margin: 0 5.5% 5.5% auto;
+  padding: 1% 1%;
+  margin: -1% 4.5% 4.5% auto;
   transform: rotate(180deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.section.--4 .arrow-to:hover {
+  transform: scale(1.2) translateX(10%) rotate(180deg);
 }
 
 .section.--4 .project-description {
@@ -638,6 +657,21 @@ html, body {
   margin-top: 1.5%;
   cursor: pointer;
   float: right;
+}
+
+.section.--4 .arrow-from {
+  display: inline-block;
+  width: 9%;
+  vertical-align: top;
+  cursor: pointer;
+  float: right;
+  padding: 1%;
+  margin: 0.5% -1% auto auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.section.--4 .arrow-from:hover {
+  transform: scale(1.2) translateX(-10%);
 }
 
 .section.--4 .mobile {
@@ -743,10 +777,16 @@ html, body {
   width: 69%;
 }
 
-.section.--5 .page.--1 .arrow.--1 {
+.section.--5 .arrow-to {
   width: 16%;
   cursor: pointer;
-  margin: 0 0 5.5% 5.5%;
+  padding: 1% 1%;
+  margin: -1% 0 4.5% 4.5%;
+  transition: all 0.3s ease-in-out;
+}
+
+.section.--5 .arrow-to:hover {
+  transform: scale(1.2) translateX(-10%);
 }
 
 .section.--5 .rectangle {
@@ -798,13 +838,19 @@ html, body {
   width: 78%;
 }
 
-.section.--5 .page.--2 .arrow.--1 {
+.section.--5 .arrow-from {
   display: inline-block;
   width: 9%;
   vertical-align: top;
   transform: rotate(180deg);
-  margin-top: 1.5%;
   cursor: pointer;
+  padding: 1%;
+  margin: 0.5% auto auto -1%;
+  transition: all 0.3s ease-in-out;
+}
+
+.section.--5 .arrow-from:hover {
+  transform: scale(1.2) translateX(10%) rotate(180deg);
 }
 
 .section.--5 .mobile {
