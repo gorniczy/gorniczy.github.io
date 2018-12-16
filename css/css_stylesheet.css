@@ -499,6 +499,12 @@ html, body {
   background-color: #F5A566;
 }
 
+.clickable.scroll.--3 {
+  margin: 21% auto auto auto;
+  width: 34%;
+  cursor: pointer;
+}
+
 .section.--3 .project-num {
   display: flex;
   justify-content: flex-end;

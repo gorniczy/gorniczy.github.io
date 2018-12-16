@@ -13,7 +13,7 @@
       const getHere = document.querySelector(target);
       const targetPosition = getHere.getBoundingClientRect().top;
       const startPosition = window.pageYOffset;
-      const distance = startPosition + targetPosition;
+      const scrollToY = startPosition + targetPosition;
       let start = null;
 
       function animation(currentTime) {
@@ -21,9 +21,12 @@
         if (start === null) start = currentTime;
         const timeElapsed = currentTime - start;
         const currentPosition = targetPosition * timeElapsed / duration + startPosition;
-        window.scrollTo(0, Math.min(currentPosition, distance));
+        const wantedPosition = startPosition < scrollToY ? Math.min(currentPosition, scrollToY) : Math.max(currentPosition, scrollToY);
+
+        window.scrollTo(0, wantedPosition);
+
         if (timeElapsed < duration) requestAnimationFrame(animation);
-        console.log(timeElapsed, duration, currentPosition);
+        console.log(startPosition, scrollToY);
       }
       requestAnimationFrame(animation);
     }
@@ -189,6 +192,7 @@
       </div>
     </div>
     <div class="sidebar dark">
+      <img src="img/scroll_up_button.svg" class="clickable scroll --3" alt="scroll up button" onclick="smoothScroll('#projects', 500)">
       <div class="project-num">
         <p>001</p>
       </div>
@@ -197,6 +201,7 @@
   <div id="project-2" class="section --4">
     <div class="line --1"></div>
     <div class="sidebar dark">
+      <img src="img/scroll_up_button.svg" class="clickable scroll --3" alt="scroll up button" onclick="smoothScroll('#projects', 500)">
       <div class="project-num">
         <p>002</p>
       </div>
@@ -317,6 +322,7 @@
       </div>
     </div>
     <div class="sidebar dark">
+      <img src="img/scroll_up_button.svg" class="clickable scroll --3" alt="scroll up button" onclick="smoothScroll('#projects', 750)">
       <div class="project-num">
         <p>003</p>
       </div>
