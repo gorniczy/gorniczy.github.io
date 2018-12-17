@@ -338,10 +338,6 @@ html, body {
   transition: all 0.3s ease-in-out;
 }
 
-.section.--3 .arrow-to:hover {
-  transform: scale(1.2) translateX(-10%);
-}
-
 .project-description-text {
   height: 63%;
   width: 100%;
@@ -609,10 +605,6 @@ html, body {
   transition: all 0.3s ease-in-out;
 }
 
-.section.--4 .arrow-to:hover {
-  transform: scale(1.2) translateX(10%) rotate(180deg);
-}
-
 .section.--4 .project-description {
   display: flex;
   height: 52%;
@@ -783,10 +775,6 @@ html, body {
   padding: 1% 1%;
   margin: -1% 0 4.5% 4.5%;
   transition: all 0.3s ease-in-out;
-}
-
-.section.--5 .arrow-to:hover {
-  transform: scale(1.2) translateX(-10%);
 }
 
 .section.--5 .rectangle {
