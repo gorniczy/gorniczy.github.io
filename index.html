@@ -26,12 +26,11 @@
         window.scrollTo(0, wantedPosition);
 
         if (timeElapsed < duration) requestAnimationFrame(animation);
-        console.log(startPosition, scrollToY);
       }
       requestAnimationFrame(animation);
     }
 
-    //  toggle between project desription and project mockups
+    // toggle between project desription and project mockups
 
     const sheet = document.getElementsByClassName('sheet');
 
@@ -44,6 +43,23 @@
     function moveBack(num) {
       const result = num === 1 ? "-100%" : "0";
       sheet[num].style.marginLeft = result;
+    }
+
+    // animate toggle arrows on project image hover
+
+    const arrow = document.getElementsByClassName('arrow-to');
+
+    function enlargeArrow(num) {
+
+      const directionDegree = num === 1 ? "translateX(10%) rotate(180deg)" : "translateX(-10%)";
+
+      arrow[num].style.transform = "scale(1.2) " + directionDegree;
+    }
+
+    function shrinkArrow(num) {
+      const noneOrDeg = num === 1 ? "rotate(180deg)" : "none";
+
+      arrow[num].style.transform = noneOrDeg;
     }
   </script>
 </head>
@@ -144,7 +160,7 @@
         <div class="page --1">
           <div class="project-description">
             <div class="project-description-main">
-              <img class="arrow-to" src="img/arrow.svg" alt="arrow" onclick="move(0)">
+              <img class="arrow-to" src="img/arrow.svg" alt="arrow" onclick="move(0)" onmouseover="enlargeArrow(0)" onmouseout="shrinkArrow(0)">
               <div class="project-description-text">
                 <div class="rectangle"></div>
                 <p class="project-description-heading">The beauty of<br>deconstructive randomness</p>
@@ -160,7 +176,7 @@
               </div>
             </div>
             <div class="project-card">
-              <div class="square --1"  onclick="move(0)">
+              <div class="square --1" onclick="move(0)" onmouseover="enlargeArrow(0)" onmouseout="shrinkArrow(0)">
                 <img src="img/twin_peaks_logo.svg" class="project-logo --1" alt="twin peaks logo">
               </div>
               <div class="name-space">
@@ -233,7 +249,7 @@
         <div class="page --1">
           <div class="project-description">
             <div class="project-card">
-              <div class="square --2" onclick="move(1)">
+              <div class="square --2" onclick="move(1)" onmouseover="enlargeArrow(1)" onmouseout="shrinkArrow(1)">
                 <img src="img/warsaw_weather_logo.svg" class="project-logo --1" alt="warsaw weather logo">
               </div>
               <div class="name-space">
@@ -241,7 +257,7 @@
               </div>
             </div>
             <div class="project-description-main">
-              <img class="arrow-to" src="img/arrow.svg" alt="arrow" onclick="move(1)">
+              <img class="arrow-to" src="img/arrow.svg" alt="arrow" onclick="move(1)" onmouseover="enlargeArrow(1)" onmouseout="shrinkArrow(1)">
               <div class="project-description-text">
                 <div class="rectangle"></div>
                 <p class="project-description-heading">The immersiveness of<br>local contexts</p>
@@ -274,7 +290,7 @@
         <div class="page --1">
           <div class="project-description">
             <div class="project-description-main">
-              <img class="arrow-to" src="img/arrow.svg" alt="arrow" onclick="move(2)">
+              <img class="arrow-to" src="img/arrow.svg" alt="arrow" onclick="move(2)" onmouseover="enlargeArrow(2)" onmouseout="shrinkArrow(2)">
               <div class="project-description-text">
                 <div class="rectangle"></div>
                 <p class="project-description-heading">The power of<br>synthetic layouts</p>
@@ -290,7 +306,7 @@
               </div>
             </div>
             <div class="project-card">
-              <div class="square --3" onclick="move(2)">
+              <div class="square --3" onclick="move(2)" onmouseover="enlargeArrow(2)" onmouseout="shrinkArrow(2)">
                 <img src="img/paper_artist_logo.svg" class="project-logo --3" alt="paper artist logo">
               </div>
               <div class="name-space">
