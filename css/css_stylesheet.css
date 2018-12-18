@@ -214,8 +214,8 @@ html, body {
 .project-cards {
   display: flex;
   justify-content: space-between;
-  height: 52%;
-  width: 70%;
+  height: 368px;
+  width: 953px;
   margin: 0 auto;
 }
 
