@@ -1,6 +1,6 @@
-/* {
+* {
   outline: 1px solid red;
-}*/
+}
 
 html, body {
   height: 100%;
@@ -118,8 +118,8 @@ html, body {
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  width: 76%;
-  height: 75%;
+  width: 955px;
+  height: 856px;
 }
 
 .name-last-name {
