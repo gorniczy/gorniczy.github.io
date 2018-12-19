@@ -119,7 +119,7 @@ html, body {
 
   .description {
     display: flex;
-    margin: 0 auto;
+    margin: auto;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
