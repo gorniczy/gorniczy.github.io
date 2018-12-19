@@ -1,0 +1,202 @@
+/* {
+  outline: 1px solid red;
+}*/
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section {
+  display: block;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  min-height: 50vw;
+  min-width: 300px;
+}
+
+/*--- Intro section ---*/
+.section.--1 {
+  font-size: 0;
+}
+
+.polygon {
+  height: 105%;
+  width: 100%;
+  background-image: linear-gradient(#EF8942, #D44312);
+  clip-path: polygon(0% 100%, 100% 95%, 100% 0%, 0% 0%);
+  -webkit-clip-path: polygon(0% 100%, 100% 97%, 100% 0%, 0% 0%);
+}
+
+.line {
+  border-bottom: 1px solid #FBE1D7;
+}
+
+.line.--1 {
+  width: 100%;
+  padding-top: 0.35%;
+  margin: 0;
+}
+
+.sidebar {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 3%;
+  margin-top: -0.35%;
+  vertical-align: top;
+}
+
+.section.--1 .sidebar {
+  height: 87%;
+  border-right: 1px solid #FBE1D7;
+}
+
+.logo, .links, .line.--2 {
+  display: none;
+}
+
+.section.--1 .content {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: top;
+  width: 97%;
+  height: 87%;
+  margin-top: -0.35%;
+}
+
+.section.--1 .social-icons {
+  display: flex;
+  width: 45%;
+  margin: 4.4% 5.7% 0 auto;
+  justify-content: space-between;
+}
+
+.section.--1 .clickable.social {
+  width: 18.5%;
+}
+
+.href-img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+.mobile-heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 25%;
+  min-height: 145px;
+  max-height: 150px;
+  margin: auto;
+}
+
+.mobile-logo {
+  height: 100%;
+  min-height: 100%;
+  transform: translateX(-39.5%);
+}
+
+.mobile-name-last-name {
+  transform: translateX(-100%);
+}
+
+.mobile-name-last-name p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #FFE0D6;
+  margin: auto 0;
+  padding: 0;
+}
+
+.emphasis {
+  color: #103470;
+}
+
+.mobile-name {
+  transform: translateX(-12%);
+}
+
+.mobile-description-visible {
+  width: 94%;
+  height: 29%;
+  align-self: center;
+  justify-content: center;
+  margin-right: 3%;
+}
+
+.mobile-description-all {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 200%;
+  height: 100%;
+  transform: translateX(-25%);
+  margin: auto;
+}
+
+.mobile-domain-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+.mobile-domain-text p {
+  width: 80%;
+  text-align: right;
+  font-family: Arial;
+  font-size: 12px;
+  color: #FFBCA5;
+}
+
+.mobile-domain-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    width: 19%;
+}
+
+.mobile-domain-name p {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFE0D6;
+}
+
+.mobile-domain-name.--1 p {
+  margin-left: auto;
+}
+
+.mobile-domain-name.--2 p {
+  margin-right: auto;
+}
+
+.intersaction {
+  width: 13.5%;
+}
+
+.intersaction img {
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.description {
+  display: none;
+}
+
+.clickable.scroll.--1 {
+   display: block;
+   width: 10%;
+   transform: translateY(50%);
+   margin-top: auto;
+   cursor: pointer;
+ }
