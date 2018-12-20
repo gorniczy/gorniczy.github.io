@@ -1,6 +1,7 @@
-/* {
+* {
   outline: 1px solid red;
-}*/
+}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -440,7 +441,8 @@ html, body {
 }
 
 .mockups {
-  display: none;
+  height: 551px;
+  width: 342px;
 }
 
 .footer-sidebar.dark {
@@ -562,10 +564,6 @@ html, body {
   background: #FED8BE;
 }
 
-.mockups {
-  display: none;
-}
-
 .section.--4 .project-num {
   display: flex;
   justify-content: center;
@@ -646,10 +644,6 @@ html, body {
   width: 85%;
   margin: 0 0 0 -5%;
   background: #FDF5EF;
-}
-
-.mockups {
-  display: none;
 }
 
 .section.--5 .project-num {
