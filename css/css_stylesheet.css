@@ -1,6 +1,6 @@
-/* {
+* {
   outline: 1px solid red;
-}*/
+}
 
 html, body {
   height: 100%;
@@ -338,7 +338,6 @@ html, body {
 }
 
 .section.--3 .project-card {
-  align-self: flex-end;
   background: #FDF5EF;
 }
 
@@ -521,11 +520,13 @@ html, body {
   cursor: pointer;
   padding: 1% 1%;
   margin: 0;
+  float: right;
+  transform: rotate(180deg);
   transition: all 0.3s ease-in-out;
 }
 
 .section.--4 .project-card {
-  align-self: flex-end;
+  float: left;
   background: #FED8BE;
 }
 
@@ -549,6 +550,12 @@ html, body {
 .scroll.--3 {
   width: 12%;
   margin-top: 58%;
+  float: right;
+}
+
+.section.--4 .project-description-heading {
+  margin: 0 0 3.5% auto;
+  text-align: right;
 }
 
 .section.--4 .rectangle {
@@ -616,7 +623,6 @@ html, body {
 }
 
 .section.--5 .project-card {
-  align-self: flex-end;
   background: #FDF5EF;
 }
 
