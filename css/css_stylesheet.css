@@ -1,6 +1,6 @@
-* {
+/* {
   outline: 1px solid red;
-}
+}*/
 
 html, body {
   height: 100%;
@@ -480,6 +480,11 @@ html, body {
 }
 
 .section.--4 .sidebar.light {
+  display: none;
+}
+
+
+.mockups {
   display: none;
 }
 
