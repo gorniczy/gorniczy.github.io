@@ -103,6 +103,40 @@
             <img src="img/instagram_logo_button.svg" class="href-img" alt="instagram logo">
           </a>
         </div>
+
+        <!-- mobile only segment : starts -->
+
+        <div class="mobile-heading">
+          <img class="mobile-logo" src="img/mobile_de_logo.svg" alt="personal logo">
+          <div class="mobile-name-last-name">
+            <p class="mobile-name">DE<span class="emphasis">NIS</span></p>
+            <p class="mobile-last-name"><span class="emphasis">G</span>ORNICHAR</p>
+          </div>
+        </div>
+        <div class="mobile-description-visible">
+          <div class="mobile-description-all">
+            <div class="mobile-domain-text">
+              <p>This is the reason I consider myself a designer. This is the reason I consider myself a designer.This is the reason I consider myself a designer.</p>
+            </div>
+            <div class="mobile-domain-name --1">
+              <p>DE<span class="emphasis">SIGN</span></p>
+            </div>
+            <div class="intersaction">
+              <img src="img/intersection.svg" alt="">
+            </div>
+            <div class="mobile-domain-name --2">
+              <p>DEVELOP</p>
+            </div>
+            <div class="mobile-domain-text">
+              <p>
+                This is the reason I consider myself a developer. This is the reason I consider myself a developer is the reason I consider myself a developer.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- mobile only segment : ends -->
+
         <div class="description">
           <p class="name-last-name">DE<span class="emphasis">NIS G</span>ORNICHAR</p>
           <div class="container design">
@@ -126,6 +160,26 @@
     </div>
   </div>
   <div id="projects" class="section --2">
+
+    <!-- mobile only segment : starts -->
+
+    <div class="mobile-project-cards">
+      <div class="mobile-project-card --1">
+        <img class="mobile_project-logo --1" src="img/twin_peaks_logo.svg" alt="twin peaks logo">
+        <p class="mobile-project-name">Twin Peaks Quote Machine</p>
+      </div>
+      <div class="mobile-project-card --2">
+        <img class="mobile-project-logo --2" src="img/warsaw_weather_logo.svg" alt="warsaw weather logo">
+        <p class="mobile-project-name">Warsaw Weather App</p>
+      </div>
+      <div class="mobile-project-card --3">
+        <img class="mobile-project-logo --3" src="img/paper_artist_logo.svg" alt="paper artist logo">
+        <p class="mobile-project-name">Landing Page for an Artist</p>
+      </div>
+    </div>
+
+    <!-- mobile only segment : ends -->
+
     <div class="project-cards">
       <div class="project-card --1">
         <div class="square --1">
@@ -159,22 +213,7 @@
       <div class="sheet">
         <div class="page --1">
           <div class="project-description">
-            <div class="project-description-main">
-              <img class="arrow-to" src="img/arrow.svg" alt="arrow" onclick="move(0)" onmouseover="enlargeArrow(0)" onmouseout="shrinkArrow(0)">
-              <div class="project-description-text">
-                <div class="rectangle"></div>
-                <p class="project-description-heading">The beauty of<br>deconstructive randomness</p>
-                <p class="project-description-paragraph">The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of
-                  my
-                  Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw
-                  attention to the beauty of randomness in deconstruction of our everyday cultural structures.</p>
-              </div>
-              <div class="view-live-code --1">
-                <span>view</span>
-                <img class="dash" src="img/dash.svg" alt="dash">
-                <span>{ </span><a href="https://gorniczy.github.io/quotes-of-twin-peaks" target="_blank">live</a><span> / </span><a href="https://github.com/gorniczy/quotes-of-twin-peaks" target="_blank">code</a><span> }</span>
-              </div>
-            </div>
+            <img class="arrow-to" src="img/arrow.svg" alt="arrow" onclick="move(0)" onmouseover="enlargeArrow(0)" onmouseout="shrinkArrow(0)">
             <div class="project-card">
               <div class="square --1" onclick="move(0)" onmouseover="enlargeArrow(0)" onmouseout="shrinkArrow(0)">
                 <img src="img/twin_peaks_logo.svg" class="project-logo --1" alt="twin peaks logo">
@@ -182,6 +221,22 @@
               <div class="name-space">
                 <p class="project-name">Twin Peaks Quote Machine</p>
               </div>
+            </div>
+            <!-- mobile only element below -->
+            <img class="clickable scroll --3" src="img/mobile_scroll_up_button_1.svg" alt="scroll up button">
+            <!-- mobile only element above -->
+            <div class="project-description-text">
+              <p class="project-description-heading">The beauty of<br>deconstructive randomness</p>
+              <div class="rectangle"></div>
+              <p class="project-description-paragraph">The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of
+                my
+                Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw
+                attention to the beauty of randomness in deconstruction of our everyday cultural structures.</p>
+            </div>
+            <div class="view-live-code --1">
+              <span>view</span>
+              <img class="dash" src="img/dash.svg" alt="dash">
+              <span>{ </span><a href="https://gorniczy.github.io/quotes-of-twin-peaks" target="_blank">live</a><span> / </span><a href="https://github.com/gorniczy/quotes-of-twin-peaks" target="_blank">code</a><span> }</span>
             </div>
           </div>
         </div>
@@ -207,8 +262,8 @@
         </div>
       </div>
     </div>
-    <div class="sidebar dark">
-      <img src="img/scroll_up_button.svg" class="clickable scroll --3" alt="scroll up button" onclick="smoothScroll('#projects', 500)">
+    <div class="footer-sidebar dark">
+      <img src="img/scroll_up_button.svg" class="clickable scroll --4" alt="scroll up button" onclick="smoothScroll('#projects', 500)">
       <div class="project-num">
         <p>001</p>
       </div>
@@ -216,12 +271,6 @@
   </div>
   <div id="project-2" class="section --4">
     <div class="line --1"></div>
-    <div class="sidebar dark">
-      <img src="img/scroll_up_button.svg" class="clickable scroll --3" alt="scroll up button" onclick="smoothScroll('#projects', 500)">
-      <div class="project-num">
-        <p>002</p>
-      </div>
-    </div>
     <div class="content">
       <div class="sheet">
         <div class="page --2">
@@ -248,6 +297,7 @@
         </div>
         <div class="page --1">
           <div class="project-description">
+            <img class="arrow-to" src="img/arrow.svg" alt="arrow" onclick="move(1)" onmouseover="enlargeArrow(1)" onmouseout="shrinkArrow(1)">
             <div class="project-card">
               <div class="square --2" onclick="move(1)" onmouseover="enlargeArrow(1)" onmouseout="shrinkArrow(1)">
                 <img src="img/warsaw_weather_logo.svg" class="project-logo --1" alt="warsaw weather logo">
@@ -256,21 +306,21 @@
                 <p class="project-name">Warsaw Weather App</p>
               </div>
             </div>
-            <div class="project-description-main">
-              <img class="arrow-to" src="img/arrow.svg" alt="arrow" onclick="move(1)" onmouseover="enlargeArrow(1)" onmouseout="shrinkArrow(1)">
-              <div class="project-description-text">
-                <div class="rectangle"></div>
-                <p class="project-description-heading">The immersiveness of<br>local contexts</p>
-                <p class="project-description-paragraph">The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of
-                  my
-                  Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw
-                  attention to the beauty of randomness in deconstruction of our everyday cultural structures.</p>
-              </div>
-              <div class="view-live-code --2">
-                <span>view</span>
-                <img class="dash" src="img/dash.svg" alt="dash">
-                <span>{ </span><a href="https://gorniczy.github.io/warsaw-weather" target="_blank">live</a><span> / </span><a href="https://github.com/gorniczy/warsaw-weather" target="_blank">code</a><span> }</span>
-              </div>
+            <!-- mobile only element below -->
+            <img class="clickable scroll --3" src="img/mobile_scroll_up_button_2.svg" alt="scroll up button">
+            <!-- mobile only element above -->
+            <div class="project-description-text">
+              <p class="project-description-heading">The immersiveness of<br>local contexts</p>
+              <div class="rectangle"></div>
+              <p class="project-description-paragraph">The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of
+                my
+                Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw
+                attention to the beauty of randomness in deconstruction of our everyday cultural structures.</p>
+            </div>
+            <div class="view-live-code --2">
+              <span>view</span>
+              <img class="dash" src="img/dash.svg" alt="dash">
+              <span>{ </span><a href="https://gorniczy.github.io/warsaw-weather" target="_blank">live</a><span> / </span><a href="https://github.com/gorniczy/warsaw-weather" target="_blank">code</a><span> }</span>
             </div>
           </div>
         </div>
@@ -278,6 +328,12 @@
     </div>
     <div class="sidebar light">
       <div class="line --3"></div>
+    </div>
+    <div class="footer-sidebar dark">
+      <img src="img/scroll_up_button.svg" class="clickable scroll --4" alt="scroll up button" onclick="smoothScroll('#projects', 500)">
+      <div class="project-num">
+        <p>002</p>
+      </div>
     </div>
   </div>
   <div id="project-3" class="section --5">
@@ -289,22 +345,7 @@
       <div class="sheet">
         <div class="page --1">
           <div class="project-description">
-            <div class="project-description-main">
-              <img class="arrow-to" src="img/arrow.svg" alt="arrow" onclick="move(2)" onmouseover="enlargeArrow(2)" onmouseout="shrinkArrow(2)">
-              <div class="project-description-text">
-                <div class="rectangle"></div>
-                <p class="project-description-heading">The power of<br>synthetic layouts</p>
-                <p class="project-description-paragraph">The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of
-                  my
-                  Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw
-                  attention to the beauty of randomness in deconstruction of our everyday cultural structures.</p>
-              </div>
-              <div class="view-live-code --3">
-                <span>view</span>
-                <img class="dash" src="img/dash.svg" alt="dash">
-                <span>{ </span><a href="https://gorniczy.github.io/gornastia" target="_blank">live</a><span> / </span><a href="https://github.com/gorniczy/gornastia" target="_blank">code</a><span> }</span>
-              </div>
-            </div>
+            <img class="arrow-to" src="img/arrow.svg" alt="arrow" onclick="move(2)" onmouseover="enlargeArrow(2)" onmouseout="shrinkArrow(2)">
             <div class="project-card">
               <div class="square --3" onclick="move(2)" onmouseover="enlargeArrow(2)" onmouseout="shrinkArrow(2)">
                 <img src="img/paper_artist_logo.svg" class="project-logo --3" alt="paper artist logo">
@@ -313,6 +354,23 @@
                 <p class="project-name">Landing page for an artist</p>
               </div>
             </div>
+            <!-- mobile only element below -->
+            <img class="clickable scroll --3" src="img/mobile_scroll_up_button_1.svg" alt="scroll up button">
+            <!-- mobile only element above -->
+            <div class="project-description-text">
+              <p class="project-description-heading">The power of<br>synthetic layouts</p>
+              <div class="rectangle"></div>
+              <p class="project-description-paragraph">The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of
+                my
+                Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw
+                attention to the beauty of randomness in deconstruction of our everyday cultural structures.</p>
+            </div>
+            <div class="view-live-code --3">
+              <span>view</span>
+              <img class="dash" src="img/dash.svg" alt="dash">
+              <span>{ </span><a href="https://gorniczy.github.io/gornastia" target="_blank">live</a><span> / </span><a href="https://github.com/gorniczy/gornastia" target="_blank">code</a><span> }</span>
+            </div>
+
           </div>
         </div>
         <div class="page --2">
@@ -337,15 +395,15 @@
         </div>
       </div>
     </div>
-    <div class="sidebar dark">
-      <img src="img/scroll_up_button.svg" class="clickable scroll --3" alt="scroll up button" onclick="smoothScroll('#projects', 750)">
+    <div class="footer-sidebar dark">
+      <img src="img/scroll_up_button.svg" class="clickable scroll --4" alt="scroll up button" onclick="smoothScroll('#projects', 750)">
       <div class="project-num">
         <p>003</p>
       </div>
     </div>
   </div>
   <div class="section --6">
-    <div class="line --4"></div>
+    <div class="line --5"></div>
     <div class="contact-name">
       <span class="contact-name-1">DE<span class="emphasis --2">NIS</span></span>
       <span class="contact-name-2"><span class="emphasis --2">G</span>ORNICHAR</span>
@@ -367,7 +425,7 @@
         <img src="img/instagram_logo_button.svg" class="href-img" alt="instagram logo">
       </a>
     </div>
-    <div class="line --5"></div>
+    <div class="line --6"></div>
   </div>
 </body>
 
