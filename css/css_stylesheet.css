@@ -1,6 +1,7 @@
-/* {
+* {
   outline: 1px solid red;
-*/
+}
+
 
 html, body {
   height: 100%;
@@ -378,7 +379,7 @@ html, body {
 
 .scroll.--3 {
   width: 12%;
-  margin-top: 63%;
+  margin-top: 58%;
 }
 
 .project-description-text {
@@ -421,7 +422,7 @@ html, body {
   align-items: center;
   justify-content: center;
   width: 87%;
-  margin: 4% auto;
+  margin: 7% auto;
 }
 
 .view-live-code>span, a {
@@ -449,6 +450,8 @@ html, body {
 }
 
 .section.--3 .footer-sidebar.dark {
+  display: inline-flex;
+  align-items: center;
   height: 7%;
   width: 100%;
   background-color: #F5A566;
@@ -463,7 +466,7 @@ html, body {
   justify-content: center;
   align-items: center;
   width: 10%;
-  height: 100%;
+  height: 60%;
   margin: 0 3.5% 0 auto;
   border-left: 1px solid black;
 }
