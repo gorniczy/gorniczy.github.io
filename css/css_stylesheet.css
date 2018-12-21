@@ -1,7 +1,6 @@
 /* {
   outline: 1px solid red;
 }*/
-
 html, body {
   height: 100%;
   width: 100%;
@@ -744,7 +743,58 @@ html, body {
 }
 
 .section.--5 .mockups {
-  display: none;
+  width: 95vw;
+  height: 153vw;
+  /*width: 343px;
+  height: 551px;*/
+}
+
+.section.--5 .arrow-from {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+  transform: rotate(180deg);
+  cursor: pointer;
+  padding: 1%;
+  margin: 2% 0 0 5%;
+  transition: all 0.3s ease-in-out;
+}
+
+.section.--5 .arrow-from:hover {
+  transform: scale(1.2) translateX(10%) rotate(180deg);
+}
+
+.section.--5 .mobile {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 44%;
+  height: 49%;
+  background: #EB9957;
+  border-radius: 0.5rem;
+  float: right;
+  margin-right: 10%;
+}
+
+.section.--5 .mobile-screen {
+  width: 92%;
+  margin-top: 5%;
+}
+
+.mobile-button {
+  width: 5%;
+  margin: auto;
+}
+
+.section.--5 .desktop {
+  display: inline-block;
+  height: 36%;
+  width: 100%;
+  margin-top: 8%;
+}
+
+.section.--5 .desktop-screen {
+  width: 95%;
 }
 
 /*--- Contact section ---*/
