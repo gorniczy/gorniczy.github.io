@@ -1,6 +1,6 @@
-/* {
+* {
   outline: 1px solid red;
-}*/
+}
 
 html, body {
   height: 100%;
@@ -176,13 +176,14 @@ html, body {
   margin-right: auto;
 }
 
-.intersaction {
+.intersection {
   width: 13.5%;
 }
 
-.intersaction img {
+.intersection img {
   display: block;
   height: 100%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -483,7 +484,6 @@ html, body {
   display: none;
 }
 
-
 .mockups {
   display: none;
 }
@@ -535,7 +535,7 @@ html, body {
 }
 
 .square.--2 {
-  background-image: radial-gradient(50% 113%, #809CCE 50%, #5376B1 100%);
+  background-image: radial-gradient(#809CCE 25%, #5376B1 100%);
 }
 
 .project-logo.--2 {
@@ -628,7 +628,7 @@ html, body {
 }
 
 .square.--3 {
-  background-image: radial-gradient(50% 117%, #73C9BD 50%, #4AA99B 100%);
+  background-image: radial-gradient(#73C9BD 25%, #4AA99B 100%);
 }
 
 .project-logo.--3 {
