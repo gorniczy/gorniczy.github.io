@@ -100,12 +100,12 @@ html, body {
 }
 
 .mobile-name-last-name {
-  transform: translateX(-100%);
+  transform: translateX(-85%);
 }
 
 .mobile-name-last-name p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 700;
   color: #FFE0D6;
   margin: auto 0;
@@ -121,7 +121,7 @@ html, body {
 }
 
 .mobile-description-visible {
-  width: 94%;
+  width: 103%;
   height: 29%;
   align-self: center;
   justify-content: center;
@@ -132,10 +132,10 @@ html, body {
 .mobile-description-all {
   display: flex;
   justify-content: center;
-  align-content: center;
   width: 200%;
   height: 100%;
   transform: translateX(-25%);
+  transition: all 1s ease-in-out;
   margin: auto;
 }
 
@@ -143,12 +143,20 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25%;
+  width: 21.625%;
+}
+
+.mobile-domain-text.--1 {
+  justify-content: flex-end;
+}
+
+.mobile-domain-text.--2 {
+  justify-content: flex-start;
 }
 
 .mobile-domain-text p {
   width: 80%;
-  text-align: right;
+  text-align: left;
   font-family: Arial;
   font-size: 12px;
   color: #FFBCA5;
@@ -156,9 +164,16 @@ html, body {
 
 .mobile-domain-name {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 19%;
+  width: 21.625%;
+}
+
+.mobile-domain-name.--1 {
+  justify-content: flex-end;
+}
+
+.mobile-domain-name.--2 {
+  justify-content: flex-start;
 }
 
 .mobile-domain-name p {
@@ -166,14 +181,6 @@ html, body {
   font-size: 20px;
   font-weight: bold;
   color: #FFE0D6;
-}
-
-.mobile-domain-name.--1 p {
-  margin-left: auto;
-}
-
-.mobile-domain-name.--2 p {
-  margin-right: auto;
 }
 
 .intersection {

@@ -30,6 +30,24 @@
       requestAnimationFrame(animation);
     }
 
+    // toggle between design and develop desription
+
+    const domains = document.getElementsByClassName('mobile-description-all');
+    let hideDomain = false;
+
+    function moveDomains(num) {
+      const answer = !hideDomain ? num : "-25"
+      domains[0].style.transform = "translateX(" + answer + "%)";
+      hideDomain = !hideDomain? true : false;
+    }
+
+    function showHideDevelop() {
+      const answer = !hideDescription ? "translateX(-48.5%)" : "translateX(-25%)";
+      domains[0].style.transform = answer;
+      hideDescription = !hideDescription? true : false;
+    }
+
+
     // toggle between project desription and project mockups
 
     const sheet = document.getElementsByClassName('sheet');
@@ -115,19 +133,19 @@
         </div>
         <div class="mobile-description-visible">
           <div class="mobile-description-all">
-            <div class="mobile-domain-text">
+            <div class="mobile-domain-text --1">
               <p>This is the reason I consider myself a designer. This is the reason I consider myself a designer.This is the reason I consider myself a designer.</p>
             </div>
             <div class="mobile-domain-name --1">
-              <p>DE<span class="emphasis">SIGN</span></p>
+              <p onclick="moveDomains('-1.5')">DE<span class="emphasis">SIGN</span></p>
             </div>
             <div class="intersection">
               <img src="img/intersection.svg" alt="">
             </div>
             <div class="mobile-domain-name --2">
-              <p>DEVELOP</p>
+              <p onclick="moveDomains('-48.5')">DEVELOP</p>
             </div>
-            <div class="mobile-domain-text">
+            <div class="mobile-domain-text --2">
               <p>
                 This is the reason I consider myself a developer. This is the reason I consider myself a developer is the reason I consider myself a developer.
               </p>
@@ -164,15 +182,15 @@
     <!-- mobile only segment : starts -->
 
     <div class="mobile-project-cards">
-      <div class="mobile-project-card --1">
+      <div class="mobile-project-card --1" onclick="smoothScroll('#project-1', 500)">
         <img class="mobile_project-logo --1" src="img/twin_peaks_logo.svg" alt="twin peaks logo">
         <p class="mobile-project-name">Twin Peaks Quote Machine</p>
       </div>
-      <div class="mobile-project-card --2">
+      <div class="mobile-project-card --2" onclick="smoothScroll('#project-2', 500)">
         <img class="mobile-project-logo --2" src="img/warsaw_weather_logo.svg" alt="warsaw weather logo">
         <p class="mobile-project-name">Warsaw Weather App</p>
       </div>
-      <div class="mobile-project-card --3">
+      <div class="mobile-project-card --3" onclick="smoothScroll('#project-3', 750)">
         <img class="mobile-project-logo --3" src="img/paper_artist_logo.svg" alt="paper artist logo">
         <p class="mobile-project-name">Landing Page for an Artist</p>
       </div>
@@ -223,7 +241,7 @@
               </div>
             </div>
             <!-- mobile only element below -->
-            <img class="clickable scroll --3" src="img/mobile_scroll_up_button_1.svg" alt="scroll up button">
+            <img class="clickable scroll --3" src="img/mobile_scroll_up_button_1.svg" alt="scroll up button" onclick="smoothScroll('#projects', 500)">
             <!-- mobile only element above -->
             <div class="project-description-text">
               <p class="project-description-heading">The beauty of<br>deconstructive randomness</p>
@@ -248,7 +266,7 @@
               <img src="img/mobile_button_1.svg" alt="mobile button" class="mobile-button --1">
             </div>
             <!-- mobile only element below -->
-            <img class="clickable scroll --3" src="img/mobile_scroll_up_button_1.svg" alt="scroll up button">
+            <img class="clickable scroll --3" src="img/mobile_scroll_up_button_1.svg" alt="scroll up button" onclick="smoothScroll('#projects', 500)">
             <!-- mobile only element above -->
             <div class="desktop">
               <div class="vertical">
@@ -284,7 +302,7 @@
             </div>
             <img class="arrow-from" src="img/arrow.svg" alt="arrow" onclick="moveBack(1)">
             <!-- mobile only element below -->
-            <img class="clickable scroll --3" src="img/mobile_scroll_up_button_2.svg" alt="scroll up button">
+            <img class="clickable scroll --3" src="img/mobile_scroll_up_button_2.svg" alt="scroll up button" onclick="smoothScroll('#projects', 500)">
             <!-- mobile only element above -->
             <div class="desktop">
               <div class="vertical">
@@ -313,7 +331,7 @@
               </div>
             </div>
             <!-- mobile only element below -->
-            <img class="clickable scroll --3" src="img/mobile_scroll_up_button_2.svg" alt="scroll up button">
+            <img class="clickable scroll --3" src="img/mobile_scroll_up_button_2.svg" alt="scroll up button" onclick="smoothScroll('#projects', 500)">
             <!-- mobile only element above -->
             <div class="project-description-text">
               <p class="project-description-heading">The immersiveness of<br>local contexts</p>
@@ -361,7 +379,7 @@
               </div>
             </div>
             <!-- mobile only element below -->
-            <img class="clickable scroll --3" src="img/mobile_scroll_up_button_1.svg" alt="scroll up button">
+            <img class="clickable scroll --3" src="img/mobile_scroll_up_button_1.svg" alt="scroll up button" onclick="smoothScroll('#projects', 750)">
             <!-- mobile only element above -->
             <div class="project-description-text">
               <p class="project-description-heading">The power of<br>synthetic layouts</p>
@@ -387,7 +405,7 @@
               <img src="img/mobile_button_1.svg" alt="mobile button" class="mobile-button --1">
             </div>
             <!-- mobile only element below -->
-            <img class="clickable scroll --3" src="img/mobile_scroll_up_button_1.svg" alt="scroll up button">
+            <img class="clickable scroll --3" src="img/mobile_scroll_up_button_1.svg" alt="scroll up button" onclick="smoothScroll('#projects', 750)">
             <!-- mobile only element above -->
             <div class="desktop">
               <div class="vertical">
