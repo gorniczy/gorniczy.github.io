@@ -5,11 +5,13 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Mobile" transform="translate(-135.000000, -304.000000)">
-            <g id="Group-2" transform="translate(135.000000, 304.000000)">
-                <path d="M0.5,0.5 L90.5,172.5" id="Line-4" stroke="#FDB89F" stroke-linecap="square" transform="translate(45.500000, 86.500000) scale(-1, 1) translate(-45.500000, -86.500000) "></path>
-                <path d="M0.5,0.5 L90.5,172.5" id="Line-4" stroke="#FDB89F" stroke-linecap="square" stroke-dasharray="3"></path>
-                <circle id="Oval-2" fill="#FFBCA5" cx="45.5" cy="86.5" r="2.5"></circle>
+        <g id="Mobile" transform="translate(-130.000000, -294.000000)">
+            <g id="Group-16" transform="translate(50.000000, 294.000000)">
+                <g id="Group-2" transform="translate(80.000000, 0.000000)">
+                    <path d="M23,39 L69.3621974,127.603311" id="Line-4" stroke="#FDB89F" stroke-linecap="square" transform="translate(46.181099, 83.301655) scale(-1, 1) translate(-46.181099, -83.301655) "></path>
+                    <path d="M0.5,0.5 L90.5,172.5" id="Line-4" stroke="#FDB89F" stroke-linecap="square" stroke-dasharray="3"></path>
+                    <circle id="Oval-2" fill="#FFBCA5" cx="45.5" cy="86.5" r="2.5"></circle>
+                </g>
             </g>
         </g>
     </g>

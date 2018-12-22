@@ -33,20 +33,25 @@
     // toggle between design and develop desription
 
     const domains = document.getElementsByClassName('mobile-description-all');
+    const description = document.getElementsByClassName('mobile-domain-text');
     let hideDomain = false;
 
     function moveDomains(num) {
-      const answer = !hideDomain ? num : "-25"
-      domains[0].style.transform = "translateX(" + answer + "%)";
+      const percent = !hideDomain ? num : "-25";
+      domains[0].style.transform = "translateX(" + percent + "%)";
+      domains[0].style.transition = "all 1s ease-in-out";
+      showHideText();
       hideDomain = !hideDomain? true : false;
     }
 
-    function showHideDevelop() {
-      const answer = !hideDescription ? "translateX(-48.5%)" : "translateX(-25%)";
-      domains[0].style.transform = answer;
-      hideDescription = !hideDescription? true : false;
+    function showHideText() {
+      const opacityValue = !hideDomain ? "1" : "0";
+      for (i = 0; i < 2; i++) {
+        description[i].style.opacity = opacityValue;
+        description[i].style.transition = "opacity 1s";
+        description[i].style.webkitTransition = "opacity 1s";
+      }
     }
-
 
     // toggle between project desription and project mockups
 
@@ -122,15 +127,11 @@
           </a>
         </div>
 
-        <!-- mobile only segment : starts -->
+        <!-- mobile only segment : below -->
 
-        <div class="mobile-heading">
-          <img class="mobile-logo" src="img/mobile_de_logo.svg" alt="personal logo">
-          <div class="mobile-name-last-name">
-            <p class="mobile-name">DE<span class="emphasis">NIS</span></p>
-            <p class="mobile-last-name"><span class="emphasis">G</span>ORNICHAR</p>
-          </div>
-        </div>
+        <img class="mobile-logo" src="img/mobile_de_logo.svg" alt="personal logo">
+            <p class="mobile-name --1">DE<span class="emphasis">NIS</span></p>
+            <p class="mobile-name --2"><span class="emphasis">G</span>ORNICHAR</p>
         <div class="mobile-description-visible">
           <div class="mobile-description-all">
             <div class="mobile-domain-text --1">
@@ -153,7 +154,7 @@
           </div>
         </div>
 
-        <!-- mobile only segment : ends -->
+        <!-- mobile only segment : abow -->
 
         <div class="description">
           <p class="name-last-name">DE<span class="emphasis">NIS G</span>ORNICHAR</p>
