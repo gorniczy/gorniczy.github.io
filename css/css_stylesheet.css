@@ -1,6 +1,7 @@
 /* {
   outline: 1px solid red;
 }*/
+
 html, body {
   height: 100%;
   width: 100%;
@@ -984,64 +985,36 @@ html, body {
   }
 
   /*--- Projects section --*/
-  .section.--2, .section.--4 {
-    display: inline-block;
-    background-color: #FFF5EE;
+  .section.--2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .mobile-project-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 89%;
-    height: 85%;
-    margin: auto;
-    padding-top: 17%;
+    width: 70%;
+    height: 70%;
+    padding-top: 0;
   }
 
   .mobile-project-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 29%;
-    cursor: pointer;
-  }
-
-  .mobile-project-card.--1 {
-    background-image: linear-gradient(-180deg, #F7BF92 0%, #EA9754 100%);
-  }
-
-  .mobile-project-card.--2 {
-    background-image: linear-gradient(-180deg, #809CCE 0%, #5376B1 100%);
-  }
-
-  .mobile-project-card.--3 {
-    background-image: linear-gradient(-180deg, #73C9BD 0%, #419589 100%);
+    height: 30%;
   }
 
   .mobile_project-logo.--1 {
-    width: 29%;
+    max-width: 128px;
   }
 
   .mobile-project-logo.--2 {
-    width: 34%;
+    max-width: 150px;
   }
 
   .mobile-project-logo.--3 {
-    width: 21%;
+    max-width: 92px;
   }
 
   .mobile-project-name {
-    font-family: Arial;
     font-size: 14px;
-    color: #FFF5EE;
-    text-align: center;
-  }
-
-  .project-cards {
-    display: none;
   }
 
   /*--- Project 001 ---*/
