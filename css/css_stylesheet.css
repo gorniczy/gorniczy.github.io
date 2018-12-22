@@ -373,7 +373,7 @@ html, body {
 
 .section.--3 .project-name {
   font-family: Arial;
-  font-size: 14px;
+  font-size: 3vw;
   text-align: center;
   width: 90%;
   margin: 0;
@@ -420,7 +420,7 @@ html, body {
   color: #181818;
   line-height: 21px;
   margin-top: -21%;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .page.--1 .view-live-code {
@@ -707,7 +707,7 @@ html, body {
 
 .section.--4 .project-name {
   font-family: Arial;
-  font-size: 14px;
+  font-size: 3vw;
   text-align: center;
   width: 90%;
   margin: 0;
@@ -802,7 +802,7 @@ html, body {
 
 .section.--5 .project-name {
   font-family: Arial;
-  font-size: 14px;
+  font-size: 3vw;
   text-align: center;
   width: 90%;
   margin: 0;
