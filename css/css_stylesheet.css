@@ -1,6 +1,6 @@
-* {
+/* {
   outline: 1px solid red;
-}
+}*/
 
 html, body {
   height: 100%;
@@ -1483,6 +1483,7 @@ html, body {
     font-size: 14px;
     color: #181818;
     line-height: 1.5;
+    overflow: visible;
     order: 3;
   }
 
