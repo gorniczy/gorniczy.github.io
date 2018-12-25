@@ -1,6 +1,6 @@
-* {
+/* {
   outline: 1px solid red;
-}
+}*/
 
 html, body {
   height: 100%;
@@ -1493,19 +1493,16 @@ html, body {
   }
 
   .section.--3 .mockups {
-    height: 62%;
-    width: 78%;
+    width: 66vw;
+    height: 35vw;
+    max-width: 90vh;
+    max-height: 48vh;
   }
 
   .section.--3 .arrow-from {
-    display: inline-block;
-    width: 9%;
-    vertical-align: top;
-    transform: rotate(180deg);
-    cursor: pointer;
-    padding: 1%;
-    margin: 0.5% auto auto -1%;
-    transition: all 0.3s ease-in-out;
+    width: 10%;
+    padding: 1% 0;
+    margin: 0.5% auto auto -23.5%;
   }
 
   .section.--3 .arrow-from:hover {
@@ -1513,63 +1510,40 @@ html, body {
   }
 
   .section.--3 .mobile {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
     height: 80%;
     width: 24%;
-    background: #EB9957;
     border-radius: 1rem;
-    margin-top: -40%;
-  }
-
-  .section.--3 .mobile-screen {
-    width: 92%;
-    margin-top: 7.5%;
-  }
-
-  .mobile-button {
-    width: 5%;
-    margin: auto;
+    float: left;
+    margin: 12% 0 0 0;
   }
 
   .section.--3 .desktop {
-    display: inline-block;
     height: 94%;
     width: 84%;
+    margin: -54.5% 0 0 0;
     float: right;
   }
 
   .vertical {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 95%;
-    width: 91%;
-    background: #EB9957;
     border-radius: 1rem 1rem 0 0;
-    margin: 0 auto;
-  }
-
-  .section.--3 .desktop-screen {
-    width: 95%;
   }
 
   .horizontal {
-    height: 5%;
-    width: 100%;
-    background: #FFBD8B;
     border-radius: 0 0 1rem 1rem;
   }
 
   .section.--3 .page.--2 .view-live-code {
     display: inline-flex;
-    align-items: center;
     justify-content: flex-end;
     align-self: center;
     width: 50%;
     float: right;
-    margin: 1% 4% 0 0;
+    margin: -2% 4% 0 0;
+  }
+
+  .page.--2 .scroll.--3 {
+    display: none;
   }
 
   .section.--3 .footer-sidebar.dark {
@@ -1630,14 +1604,12 @@ html, body {
     align-items: flex-end;
     height: 100%;
     width: 7.5%;
-    background-color: #F5A566;
     vertical-align: top;
     margin: -0.35% 0 0 0;
     order: 1;
   }
 
   .section.--4 .project-num {
-    display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     width: 33%;
@@ -1651,10 +1623,7 @@ html, body {
   .section.--4 .project-num p {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    font-family: Arial;
-    font-size: 18px;
     margin: 15% 0;
-    color: #181818;
   }
 
   .section.--4 .content {
@@ -1664,26 +1633,66 @@ html, body {
     order: 2;
   }
 
+  .section.--4 .mockups {
+    width: 66vw;
+    height: 35vw;
+    max-width: 90vh;
+    max-height: 48vh;
+  }
+
+  .section.--4 .arrow-from {
+    width: 10%;
+    padding: 1% 0;
+    margin: 0.5% -23.5% auto 0;
+    float: right;
+  }
+
+  .section.--4 .arrow-from:hover {
+    transform: scale(1.2) translateX(10%);
+  }
+
+  .section.--4 .mobile {
+    position: relative;
+    height: 80%;
+    width: 24%;
+    border-radius: 1rem;
+    float: right;
+    margin: 12% 0 0 0;
+  }
+
+
+  .section.--4 .desktop {
+    height: 94%;
+    width: 84%;
+    margin: -54.5% 0 0 0;
+    float: left;
+  }
+
+  .section.--4 .page.--2 .view-live-code {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-self: center;
+    width: 50%;
+    float: left;
+    margin: -2% 0 0 4%;
+  }
+
+  .section.--4 .page.--2 .scroll.--3  {
+    display: none;
+  }
+
   .section.--4 .project-card {
     min-width: 35%;
-    background: #FED8BE;
     float: none;
     order: 1;
   }
 
   .section.--4 .name-space {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 30%;
-    width: 100%;
   }
 
   .section.--4 .project-name {
-    font-family: Arial;
     font-size: 18px;
-    text-align: center;
-    color: #181818;
   }
 
   .section.--4 .arrow-to {
@@ -1705,7 +1714,6 @@ html, body {
 
   .section.--4 .project-description-text {
     margin: 3.5% 0 0 0;
-    order: 2;
   }
 
   .section.--4 .rectangle {
@@ -1735,94 +1743,17 @@ html, body {
     order: 4;
   }
 
-  .section.--4 .name-space {
-    height: 30%;
-  }
-
-  .section.--4 .project-name {
-    font-size: 18px;
-  }
-
-  .section.--4 .mockups {
-    height: 62%;
-    width: 78%;
-  }
-
-  .section.--4 .page.--2 .arrow.--1 {
-    display: inline-block;
-    width: 9%;
-    vertical-align: top;
-    margin-top: 1.5%;
-    cursor: pointer;
-    float: right;
-  }
-
-  .section.--4 .arrow-from {
-    display: inline-block;
-    width: 9%;
-    vertical-align: top;
-    cursor: pointer;
-    float: right;
-    padding: 1%;
-    margin: 0.5% -1% auto auto;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .section.--4 .arrow-from:hover {
-    transform: scale(1.2) translateX(-10%);
-  }
-
-  .section.--4 .mobile {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    height: 80%;
-    width: 24%;
-    background: #EB9957;
-    border-radius: 1rem;
-    margin-top: -40%;
-    float: right;
-    position: relative;
-  }
-
-  .section.--4 .mobile-screen {
-    width: 90%;
-    margin-top: 7%;
-  }
-
-  .section.--4 .desktop {
-    display: inline-block;
-    height: 94%;
-    width: 84%;
-  }
-
-  .screen-background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 92%;
-    width: 96%;
-    background: #FFDBBF;
-  }
-
-  .section.--4 .desktop-screen {
-    width: 100%;
-  }
-
-  .section.--4 .page.--2 .view-live-code {
-    display: inline-flex;
-    align-items: center;
-    justify-content: flex-start;
-    align-self: center;
-    width: 50%;
-    margin: 1% 0 0 4%;
-  }
 
   .section.--4 .sidebar.light {
     display: inline-flex;
     height: 97%;
     border-left: 1px solid #FFBCA5;
     order: 3;
+  }
+
+  .line.--3 {
+    width: 127%;
+    margin: auto 0 25% -180%;
   }
 
   /* Project 003 */
@@ -1900,19 +1831,16 @@ html, body {
   }
 
   .section.--5 .mockups {
-    height: 62%;
-    width: 78%;
+    width: 66vw;
+    height: 35vw;
+    max-width: 90vh;
+    max-height: 48vh;
   }
 
   .section.--5 .arrow-from {
-    display: inline-block;
-    width: 9%;
-    vertical-align: top;
-    transform: rotate(180deg);
-    cursor: pointer;
-    padding: 1%;
-    margin: 0.5% auto auto -1%;
-    transition: all 0.3s ease-in-out;
+    width: 10%;
+    padding: 1% 0;
+    margin: 0.5% auto auto -23.5%;
   }
 
   .section.--5 .arrow-from:hover {
@@ -1920,40 +1848,28 @@ html, body {
   }
 
   .section.--5 .mobile {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
     height: 80%;
     width: 24%;
-    background: #EB9957;
     border-radius: 1rem;
-    margin-top: -40%;
-  }
-
-  .section.--5 .mobile-screen {
-    width: 90%;
-    margin-top: 7.5%;
+    float: left;
+    margin: 12% 0 0 0;
   }
 
   .section.--5 .desktop {
-    display: inline-block;
     height: 94%;
     width: 84%;
+    margin: -54.5% 0 0 0;
     float: right;
-  }
-
-  .section.--5 .desktop-screen {
-    width: 95%;
   }
 
   .section.--5 .page.--2 .view-live-code {
     display: inline-flex;
-    align-items: center;
     justify-content: flex-end;
     align-self: center;
     width: 50%;
     float: right;
-    margin: 1% 4% 0 0;
+    margin: -2% 4% 0 0;
   }
 
   .section.--5 .footer-sidebar.dark {
@@ -1988,21 +1904,19 @@ html, body {
     color: #181818;
   }
 
-  .line.--3 {
-    width: 127%;
-    margin: auto 0 25% -180%;
-  }
-
   /* Contact info */
   .section.--6 {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 13.541%;
+    height: 13.5%;
+    min-height: 13.5%;
     background-image: linear-gradient(#EF8942, #D44312);
   }
 
-  .line.--4 {
+  .line.--5 {
+    display: inline-block;
     height: 68%;
     max-width: 1px;
     border-right: 1px solid #FBE1D7;
@@ -2021,7 +1935,7 @@ html, body {
 
   .contact-name span {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.3vw;
+    font-size: 18px;
     font-weight: 700;
     color: #FFE0D6;
     margin: 0;
@@ -2041,14 +1955,14 @@ html, body {
 
   .contact-phone {
     font-family: Arial;
-    font-size: 1vw;
+    font-size: 14px;
     color: #FFE0D6;
     margin: auto;
   }
 
   .contact-mail {
     font-family: Arial;
-    font-size: 1vw;
+    font-size: 14px;
     font-weight: bold;
     color: #FFE0D6;
     text-decoration: none;
@@ -2057,7 +1971,7 @@ html, body {
 
   .contact-location {
     font-family: Arial;
-    font-size: 1vw;
+    font-size: 14px;
     color: #FFE0D6;
     margin: auto;
   }
@@ -2074,7 +1988,8 @@ html, body {
     width: 16%;
   }
 
-  .line.--5 {
+  .line.--6 {
+    display: inline-block;
     height: 68%;
     max-width: 1px;
     border-right: 1px solid #FBE1D7;
