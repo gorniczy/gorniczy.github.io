@@ -1117,7 +1117,7 @@ html, body {
   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1366px) {
+@media only screen and (orientation: landscape) {
 
   /* Intro section */
   .line {
@@ -1459,14 +1459,16 @@ html, body {
   }
 
   .section.--3 .rectangle {
-    min-height: 47%;
+    width: 61%;
+    height: 47%;
     min-width: 61%;
+    min-height: 47%;
     background: #FDF5EF;
     order: 1;
   }
 
   .section.--3 .project-description-heading {
-    margin: -20% auto 0 auto;
+    margin: -23% auto 0 auto;
     font-family: Arial;
     font-size: 18px;
     font-weight: bold;
@@ -1477,12 +1479,12 @@ html, body {
 
   .project-description-paragraph {
     width: 100%;
-    margin: 3% 0 0 0;
+    margin: 1% 0 0 0;
     text-align: justify;
     font-family: Arial;
     font-size: 14px;
     color: #181818;
-    line-height: 1.5;
+    line-height: 2;
     overflow: visible;
     order: 3;
   }
