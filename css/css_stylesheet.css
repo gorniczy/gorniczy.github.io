@@ -1,6 +1,6 @@
-/* {
+* {
   outline: 1px solid red;
-}*/
+}
 
 html, body {
   height: 100%;
@@ -13,9 +13,9 @@ html, body {
 .section {
   height: 100%;
   width: 100%;
-  min-height: 50vw;
+/*  min-height: 50vw;
   min-width: 300px;
-  margin: 0;
+  margin: 0;*/
   font-size: 0;
 }
 
@@ -965,7 +965,7 @@ html, body {
   width: 16%;
 }
 
-@media only screen and (min-width: 500px) and (max-width: 768px) {
+@media only screen and (min-width: 500px) {
 
   /*--- Intro section ---*/
   .mobile-logo {
@@ -1223,7 +1223,7 @@ html, body {
 
   .name-last-name {
     height: 23%;
-    margin: 0px;
+    margin: 0;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 5.2vw;
@@ -1268,7 +1268,7 @@ html, body {
   .domain-text {
     width: 64%;
     text-align: justify;
-    margin: 0px;
+    margin: 0;
     font-family: Arial;
     font-size: 1.3vw;
     color: #FFBCA5;
@@ -1996,4 +1996,6 @@ html, body {
     margin: auto 7.5% 0 auto;
     box-sizing: border-box;
   }
+
+
 }
