@@ -1,7 +1,6 @@
 /* {
   outline: 1px solid red;
 }*/
-
 html, body {
   height: 100%;
   width: 100%;
@@ -1317,8 +1316,10 @@ html, body {
   .project-cards {
     display: flex;
     justify-content: space-between;
-    height: 52%;
-    width: 70%;
+    width: 70vw;
+    height: 29vw;
+    max-width: 168vh;
+    max-height: 70vh;
     margin: 0 auto;
   }
 
@@ -1385,19 +1386,22 @@ html, body {
   }
 
   /* Project 001 */
-  .section.--3, .section.--5 {
-    background-color: #FED8BE;
-    font-size: 0;
-  }
-
   .section.--3 .line.--1 {
     display: inline-block;
+    border-bottom: 1px solid #FFBCA5;
   }
 
   .section.--3 .sidebar.light {
     display: inline-flex;
     height: 97%;
-    border-right: 1px solid #FBE1D7;
+    border-right: 1px solid #FFBCA5;
+  }
+
+  .line.--2 {
+    display: inline-block;
+    width: 127%;
+    margin: auto -180% 25% 0%;
+    border-bottom: 1px solid #FFBCA5;
   }
 
   .section.--3 .content {
@@ -1660,7 +1664,7 @@ html, body {
   .section.--3 .project-num p {
     writing-mode: vertical-rl;
     font-family: Arial;
-    font-size: 1.3vw;
+    font-size: 18px;
     margin: 15% 0;
     color: #181818;
   }
