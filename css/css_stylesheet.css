@@ -1,6 +1,7 @@
-/* {
+* {
   outline: 1px solid red;
-}*/
+}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -1303,10 +1304,6 @@ html, body {
   }
 
   /* Projects */
-  .section.--2, .section.--4 {
-    background-color: #FFF5EE;
-  }
-
   .section.--2 {
     display: flex;
     justify-content: center;
@@ -1368,7 +1365,7 @@ html, body {
 
   .section.--2 .project-name {
     font-family: Arial;
-    font-size: 1.3vw;
+    font-size: 18px;
     text-align: center;
     color: #181818;
     margin-top: 15%;
@@ -1399,38 +1396,20 @@ html, body {
 
   .line.--2 {
     display: inline-block;
-    width: 127%;
-    margin: auto -180% 25% 0%;
     border-bottom: 1px solid #FFBCA5;
   }
 
   .section.--3 .content {
-    display: inline-block;
     width: 85%;
     height: 100%;
     margin: -0.35% 0 0 0;
-    box-sizing: border-box;
-    overflow: hidden;
   }
 
   .sheet {
     display: inline-block;
-    width: 200%;
-    height: 100%;
     margin: -0.35% 0 0 0;
     box-sizing: border-box;
     overflow: hidden;
-  }
-
-  .section.--3 .page {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    vertical-align: top;
-    width: 50%;
-    height: 100%;
-    margin: 0;
-    box-sizing: border-box;
   }
 
   .section.--3 .project-description {
@@ -1473,56 +1452,26 @@ html, body {
 
   .section.--3 .project-description-heading {
     margin: -23% auto 0 auto;
-    font-family: Arial;
     font-size: 18px;
-    font-weight: bold;
-    color: #181818;
     line-height: 1.5;
     order: 2;
   }
 
   .project-description-paragraph {
-    width: 100%;
     margin: 1% 0 0 0;
-    text-align: justify;
-    font-family: Arial;
     font-size: 14px;
-    color: #181818;
     line-height: 2;
     overflow: visible;
     order: 3;
   }
 
   .section.--3 .page.--1 .view-live-code {
-    display: flex;
-    align-items: center;
     justify-content: flex-end;
     align-self: flex-end;
     width: 57%;
     min-width: 57%;
     margin: 0 5% 3% -57%;
     order: 3;
-  }
-
-  .view-live-code>span, a {
-    font-family: Arial;
-    font-size: 14px;
-    color: #181818;
-  }
-
-  .view-live-code a {
-    font-weight: bold;
-    text-decoration: none;
-    margin: 0 2%;
-  }
-
-  .view-live-code a:hover {
-    position: relative;
-    bottom: 1px;
-  }
-
-  .dash {
-    margin: 0 3%;
   }
 
   .section.--3 .project-card {
@@ -1532,18 +1481,11 @@ html, body {
   }
 
   .section.--3 .name-space {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 30%;
-    width: 100%;
   }
 
   .section.--3 .project-name {
-    font-family: Arial;
     font-size: 18px;
-    text-align: center;
-    color: #181818;
   }
 
   .clickable.scroll.--3 {
@@ -1671,25 +1613,27 @@ html, body {
 
   /* Project 002 */
   .section.--4 {
-    font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .section.--4 .line.--1 {
     display: inline-block;
-  }
-
-  .section.--4 .sidebar {
-    height: 97%;
-    border-right: 1px solid #FBE1D7;
+    min-width: 100%;
+    border-bottom: 1px solid #FFBCA5;
   }
 
   .section.--4 .footer-sidebar.dark {
     display: inline-flex;
+    flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-start;
+    align-items: flex-end;
     height: 100%;
     width: 7.5%;
     background-color: #F5A566;
+    vertical-align: top;
+    margin: -0.35% 0 0 0;
+    order: 1;
   }
 
   .section.--4 .project-num {
@@ -1701,80 +1645,102 @@ html, body {
     margin-left: 15%;
     box-sizing: border-box;
     border-top: 1px solid black;
+    border-right: none;
   }
 
   .section.--4 .project-num p {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     font-family: Arial;
-    font-size: 1.3vw;
+    font-size: 18px;
     margin: 15% 0;
     color: #181818;
   }
 
   .section.--4 .content {
-    display: inline-block;
     width: 85%;
     height: 100%;
     margin: -0.35% 0 0 0;
-    box-sizing: border-box;
-    overflow: hidden;
+    order: 2;
   }
 
-  .section.--4 .sheet {
-    margin-left: -100%;
+  .section.--4 .project-card {
+    min-width: 35%;
+    background: #FED8BE;
+    float: none;
+    order: 1;
   }
 
-  .section.--4 .page {
-    display: inline-flex;
+  .section.--4 .name-space {
+    display: flex;
     justify-content: center;
     align-items: center;
-    vertical-align: top;
-    width: 50%;
-    height: 100%;
-    margin: 0;
-    box-sizing: border-box;
+    height: 30%;
+    width: 100%;
+  }
+
+  .section.--4 .project-name {
+    font-family: Arial;
+    font-size: 18px;
+    text-align: center;
+    color: #181818;
   }
 
   .section.--4 .arrow-to {
-    width: 16%;
-    cursor: pointer;
-    padding: 1% 1%;
-    margin: -1% 4.5% 4.5% auto;
-    transform: rotate(180deg);
-    transition: all 0.3s ease-in-out;
+    width: 10%;
+    min-width: 11%;
+    height: 2%;
+    padding: 1% 0;
+    margin: -1% -57% 4.5% 51%;
+    order: 2;
   }
 
   .section.--4 .project-description {
     display: flex;
-    height: 52%;
-    width: 69%;
+    height: 35vw;
+    width: 70vw;
+    max-width: 180vh;
+    max-height: 90vh;
+  }
+
+  .section.--4 .project-description-text {
+    margin: 3.5% 0 0 0;
+    order: 2;
   }
 
   .section.--4 .rectangle {
-    margin-left: auto;
-    height: 48%;
-    width: 56%;
+    width: 61%;
+    height: 47%;
+    min-width: 61%;
+    min-height: 47%;
     background: #FED8BE;
+    align-self: flex-end;
+    margin: 0 -5% 0 0;
+    order: 1;
   }
 
   .section.--4 .project-description-heading {
-    width: 88%;
-    margin: -19% auto 2.6% auto;
-    font-family: Arial;
-    font-size: 1.3vw;
-    font-weight: bold;
-    text-align: right;
-    color: #181818;
-    line-height: 1.6vw;
+    margin: -23% auto 0 auto;
+    font-size: 18px;
+    line-height: 1.5;
+    order: 2;
   }
 
   .section.--4 .page.--1 .view-live-code {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    align-self: center;
-    width: 87%;
+    justify-content: flex-start;
+    align-self: flex-end;
+    width: 57%;
+    min-width: 57%;
+    margin: 0 5% 3% -57%;
+    order: 4;
+  }
+
+  .section.--4 .name-space {
+    height: 30%;
+  }
+
+  .section.--4 .project-name {
+    font-size: 18px;
   }
 
   .section.--4 .mockups {
@@ -1852,117 +1818,85 @@ html, body {
     margin: 1% 0 0 4%;
   }
 
-  .section.--4 .project-card {
-    width: 35%;
-    background: #FED8BE;
-  }
-
-  .section.--4 .name-space {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30%;
-    width: 100%;
-  }
-
-  .section.--4 .project-name {
-    font-family: Arial;
-    font-size: 1.3vw;
-    text-align: center;
-    color: #181818;
-  }
-
   .section.--4 .sidebar.light {
+    display: inline-flex;
     height: 97%;
-    border-left: 1px solid #FBE1D7;
+    border-left: 1px solid #FFBCA5;
+    order: 3;
   }
 
   /* Project 003 */
-  .section.--5 .sidebar {
-    height: 97%;
-    border-right: 1px solid #FBE1D7;
-  }
-
   .section.--5 .line.--1 {
     display: inline-block;
+    border-bottom: 1px solid #FFBCA5;
+  }
+
+  .section.--5 .sidebar.light {
+    display: inline-flex;
+    height: 97%;
+    border-right: 1px solid #FFBCA5;
   }
 
   .section.--5 .content {
-    display: inline-block;
     width: 85%;
     height: 100%;
     margin: -0.35% 0 0 0;
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-
-  .section.--5 .page {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    vertical-align: top;
-    width: 50%;
-    height: 100%;
-    margin: 0;
-    box-sizing: border-box;
   }
 
   .section.--5 .project-description {
     display: flex;
-    height: 52%;
-    width: 69%;
+    height: 35vw;
+    width: 70vw;
+    max-width: 180vh;
+    max-height: 90vh;
   }
 
   .section.--5 .arrow-to {
-    width: 16%;
-    cursor: pointer;
-    padding: 1% 1%;
-    margin: -1% 0 4.5% 4.5%;
-    transition: all 0.3s ease-in-out;
+    width: 10%;
+    min-width: 11%;
+    height: 2%;
+    padding: 1% 0;
+    margin: -1% 0 4.5% 2.7%;
+    order: 1;
   }
 
   .section.--5 .rectangle {
-    height: 48%;
-    width: 56%;
+    width: 61%;
+    height: 47%;
+    min-width: 61%;
+    min-height: 47%;
     background: #FDF5EF;
+    order: 1;
   }
 
   .section.--5 .project-description-heading {
-    width: 88%;
-    margin: -19% auto 2.6% auto;
-    font-family: Arial;
-    font-size: 1.3vw;
-    font-weight: bold;
-    color: #181818;
-    line-height: 1.6vw;
+    margin: -23% auto 0 auto;
+    font-size: 18px;
+    line-height: 1.5;
+    order: 2;
   }
 
   .section.--5 .page.--1 .view-live-code {
-    display: flex;
-    align-items: center;
     justify-content: flex-end;
-    align-self: center;
-    width: 87%;
+    align-self: flex-end;
+    width: 57%;
+    min-width: 57%;
+    margin: 0 5% 3% -57%;
+    order: 3;
   }
 
   .section.--5 .project-card {
-    width: 35%;
+    min-width: 35%;
     background: #FDF5EF;
+    order: 4;
   }
 
   .section.--5 .name-space {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 30%;
-    width: 100%;
   }
 
   .section.--5 .project-name {
-    font-family: Arial;
-    font-size: 1.3vw;
-    text-align: center;
-    color: #181818;
+    font-size: 18px;
   }
 
   .section.--5 .mockups {
@@ -2024,11 +1958,14 @@ html, body {
 
   .section.--5 .footer-sidebar.dark {
     display: inline-flex;
+    flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
     height: 100%;
     width: 7.5%;
     background-color: #F5A566;
+    vertical-align: top;
+    margin: -0.35% 0 0 0;
   }
 
   .section.--5 .project-num {
@@ -2040,12 +1977,13 @@ html, body {
     margin-right: 15%;
     box-sizing: border-box;
     border-top: 1px solid black;
+    border-left: none;
   }
 
   .section.--5 .project-num p {
     writing-mode: vertical-rl;
     font-family: Arial;
-    font-size: 1.3vw;
+    font-size: 18px;
     margin: 15% 0;
     color: #181818;
   }
