@@ -1,6 +1,6 @@
-* {
+/* {
   outline: 1px solid red;
-}
+}*/
 
 html, body {
   height: 100%;
@@ -13,7 +13,7 @@ html, body {
 .section {
   height: 100%;
   width: 100%;
-/*  min-height: 50vw;
+  /*  min-height: 50vw;
   min-width: 300px;
   margin: 0;*/
   font-size: 0;
@@ -1383,6 +1383,11 @@ html, body {
   }
 
   /* Project 001 */
+  .section.--3 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .section.--3 .line.--1 {
     display: inline-block;
     border-bottom: 1px solid #FFBCA5;
@@ -1593,7 +1598,6 @@ html, body {
 
   .section.--4 .line.--1 {
     display: inline-block;
-    min-width: 100%;
     border-bottom: 1px solid #FFBCA5;
   }
 
@@ -1660,7 +1664,6 @@ html, body {
     margin: 12% 0 0 0;
   }
 
-
   .section.--4 .desktop {
     height: 94%;
     width: 84%;
@@ -1677,7 +1680,7 @@ html, body {
     margin: -2% 0 0 4%;
   }
 
-  .section.--4 .page.--2 .scroll.--3  {
+  .section.--4 .page.--2 .scroll.--3 {
     display: none;
   }
 
@@ -1743,7 +1746,6 @@ html, body {
     order: 4;
   }
 
-
   .section.--4 .sidebar.light {
     display: inline-flex;
     height: 97%;
@@ -1757,6 +1759,11 @@ html, body {
   }
 
   /* Project 003 */
+  .section.--5 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .section.--5 .line.--1 {
     display: inline-block;
     border-bottom: 1px solid #FFBCA5;
@@ -1996,6 +2003,4 @@ html, body {
     margin: auto 7.5% 0 auto;
     box-sizing: border-box;
   }
-
-
 }
