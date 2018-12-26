@@ -12,13 +12,20 @@
     window.addEventListener("resize", setSpecificFonts);
 
     function setSpecificFonts() {
+      const landscape = window.matchMedia("(orientation: landscape)").matches;
+
+      const nameSize = landscape? 0.04 : 0.05;
+      const headingSize = landscape? 0.04 : 0.06;
+      const paragraphSize = landscape? 0.03 : 0.05;
+      const viewSize = landscape? 0.03 : 0.05;
+      const numberSize = landscape? 0.2 : 0.038;
 
 
-      setFontSize('project-card', 'project-name', 0.064); // project names
-      setFontSize('project-description-text', 'project-description-heading', 0.04); // project description heading
-      setFontSize('project-description-text', 'project-description-paragraph', 0.03); // project description paragraph
-      setFontSize('project-description-text', 'view-live-code', 0.03); // project view - live or code
-      setFontSize('footer-sidebar', 'project-num', 0.2); // project number
+      setFontSize('project-description-text', 'project-name', nameSize); // project names
+      setFontSize('project-description-text', 'project-description-heading', headingSize); // project description heading
+      setFontSize('project-description-text', 'project-description-paragraph', paragraphSize); // project description paragraph
+      setFontSize('project-description-text', 'view-live-code', viewSize); // project view - live or code
+      setFontSize('footer-sidebar', 'project-num', numberSize); // project number
 
     }
 

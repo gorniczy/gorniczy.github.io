@@ -1,7 +1,6 @@
-* {
+/* {
   outline: 1px solid red;
-}
-
+}*/
 html, body {
   height: 100%;
   width: 100%;
@@ -401,7 +400,7 @@ html, body {
   /*  font-size: 18px;*/
   font-weight: bold;
   color: #181818;
-  line-height: 21px;
+  line-height: 1.5;
 }
 
 .section.--3 .rectangle {
@@ -419,7 +418,7 @@ html, body {
   font-size: 3vw;
   /*font-size: 12px;*/
   color: #181818;
-  line-height: 21px;
+  line-height: 1.5;
   margin-top: -21%;
   overflow-y: scroll;
 }
@@ -1044,7 +1043,7 @@ html, body {
     /*font-size: 12px;*/
     color: #181818;
     line-height: 3vh;
-    overflow-y: visible;
+    overflow-y: scroll;
   }
 
   .page.--1 .view-live-code {
@@ -1414,10 +1413,10 @@ html, body {
 
   .section.--3 .project-description {
     display: flex;
-    height: 35vw;
     width: 70vw;
-    max-width: 180vh;
-    max-height: 90vh;
+    height: 35vw;
+    max-width: 100vh;
+    max-height: 50vh;
   }
 
   .section.--3 .arrow-to {
@@ -1495,8 +1494,8 @@ html, body {
   .section.--3 .mockups {
     width: 66vw;
     height: 35vw;
-    max-width: 90vh;
-    max-height: 48vh;
+    max-width: 101.25vh;
+    max-height: 54vh;
   }
 
   .section.--3 .arrow-from {
@@ -1636,8 +1635,8 @@ html, body {
   .section.--4 .mockups {
     width: 66vw;
     height: 35vw;
-    max-width: 90vh;
-    max-height: 48vh;
+    max-width: 101.25vh;
+    max-height: 54vh;
   }
 
   .section.--4 .arrow-from {
@@ -1705,10 +1704,10 @@ html, body {
 
   .section.--4 .project-description {
     display: flex;
-    height: 35vw;
     width: 70vw;
-    max-width: 180vh;
-    max-height: 90vh;
+    height: 35vw;
+    max-width: 100vh;
+    max-height: 50vh;
   }
 
   .section.--4 .project-description-text {
@@ -1779,10 +1778,10 @@ html, body {
 
   .section.--5 .project-description {
     display: flex;
-    height: 35vw;
     width: 70vw;
-    max-width: 180vh;
-    max-height: 90vh;
+    height: 35vw;
+    max-width: 100vh;
+    max-height: 50vh;
   }
 
   .section.--5 .arrow-to {
@@ -1836,8 +1835,8 @@ html, body {
   .section.--5 .mockups {
     width: 66vw;
     height: 35vw;
-    max-width: 90vh;
-    max-height: 48vh;
+    max-width: 101.25vh;
+    max-height: 54vh;
   }
 
   .section.--5 .arrow-from {
