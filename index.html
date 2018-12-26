@@ -6,6 +6,32 @@
   <title>Denis Gornichar</title>
   <link href="css/css_stylesheet.css" type="text/css" rel="stylesheet">
   <script>
+    // set font sizes
+
+    window.addEventListener("DOMContentLoaded", setSpecificFonts);
+    window.addEventListener("resize", setSpecificFonts);
+
+    function setSpecificFonts() {
+
+
+      setFontSize('project-card', 'project-name', 0.064); // project names
+      setFontSize('project-description-text', 'project-description-heading', 0.04); // project description heading
+      setFontSize('project-description-text', 'project-description-paragraph', 0.03); // project description paragraph
+      setFontSize('project-description-text', 'view-live-code', 0.03); // project view - live or code
+      setFontSize('footer-sidebar', 'project-num', 0.2); // project number
+
+    }
+
+    function setFontSize(parentElement, textElement, num) {
+      const parent = document.getElementsByClassName(parentElement);
+      const text = document.getElementsByClassName(textElement);
+      for (i = 0; i < text.length; i++) {
+        const width = document.getElementsByClassName(parentElement)[0].offsetWidth;
+        text[i].style.fontSize = width * num + "px";
+      }
+    };
+
+
     // smooth scroll animation
 
     function smoothScroll(target, duration) {
@@ -252,7 +278,7 @@
                 Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw
                 attention to the beauty of randomness in deconstruction of our everyday cultural structures.</p>
             </div>
-            <div class="view-live-code --1">
+            <div class="view-live-code">
               <span>view</span>
               <img class="dash" src="img/dash.svg" alt="dash">
               <span>{ </span><a href="https://gorniczy.github.io/quotes-of-twin-peaks" target="_blank">live</a><span> / </span><a href="https://github.com/gorniczy/quotes-of-twin-peaks" target="_blank">code</a><span> }</span>
@@ -275,7 +301,7 @@
               </div>
               <div class="horizontal"></div>
             </div>
-            <div class="view-live-code --2">
+            <div class="view-live-code">
               <span>view</span>
               <img class="dash" src="img/dash.svg" alt="dash">
               <span>{ </span><a href="https://gorniczy.github.io/quotes-of-twin-peaks" target="_blank">live</a><span> / </span><a href="https://github.com/gorniczy/quotes-of-twin-peaks" target="_blank">code</a><span> }</span>
@@ -316,7 +342,7 @@
               </div>
               <div class="horizontal"></div>
             </div>
-            <div class="view-live-code --2">
+            <div class="view-live-code">
               <span>view</span>
               <img class="dash" src="img/dash.svg" alt="dash">
               <span>{ </span><a href="https://gorniczy.github.io/warsaw-weather" target="_blank">live</a><span> / </span><a href="https://github.com/gorniczy/warsaw-weather" target="_blank">code</a><span> }</span>
@@ -345,7 +371,7 @@
                 Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw
                 attention to the beauty of randomness in deconstruction of our everyday cultural structures.</p>
             </div>
-            <div class="view-live-code --2">
+            <div class="view-live-code">
               <span>view</span>
               <img class="dash" src="img/dash.svg" alt="dash">
               <span>{ </span><a href="https://gorniczy.github.io/warsaw-weather" target="_blank">live</a><span> / </span><a href="https://github.com/gorniczy/warsaw-weather" target="_blank">code</a><span> }</span>
@@ -390,7 +416,7 @@
                 Twin Peaks Quote Machine. I designrd this project to draw attention to the beauty of randomness in deconstruction of our everyday cultural structures. The desrciption of my Twin Peaks Quote Machine. I designrd this project to draw
                 attention to the beauty of randomness in deconstruction of our everyday cultural structures.</p>
             </div>
-            <div class="view-live-code --3">
+            <div class="view-live-code">
               <span>view</span>
               <img class="dash" src="img/dash.svg" alt="dash">
               <span>{ </span><a href="https://gorniczy.github.io/gornastia" target="_blank">live</a><span> / </span><a href="https://github.com/gorniczy/gornastia" target="_blank">code</a><span> }</span>
@@ -414,7 +440,7 @@
               </div>
               <div class="horizontal"></div>
             </div>
-            <div class="view-live-code --2">
+            <div class="view-live-code">
               <span>view</span>
               <img class="dash" src="img/dash.svg" alt="dash">
               <span>{ </span><a href="https://gorniczy.github.io/gornastia" target="_blank">live</a><span> / </span><a href="https://github.com/gorniczy/gornastia" target="_blank">code</a><span> }</span>
@@ -436,9 +462,9 @@
       <span class="contact-name-1">DE<span class="emphasis --2">NIS</span></span>
       <span class="contact-name-2"><span class="emphasis --2">G</span>ORNICHAR</span>
     </div>
-    <span class="contact-phone">+48 503 687 787</span>
-    <a href="mailto:denysgornichar@gmail.com" class="contact-mail">denysgornichar@gmail.com</a>
-    <span class="contact-location">Warsaw, Poland</span>
+    <span class="contact contact-phone">+48 503 687 787</span>
+    <a href="mailto:denysgornichar@gmail.com" class="contact contact-mail">denysgornichar@gmail.com</a>
+    <span class="contact contact-location">Warsaw, Poland</span>
     <div class="social-icons">
       <a href="https://github.com/gorniczy" class="clickable social" target="_blank">
         <img src="img/github_logo_button.svg" class="href-img" alt="github logo">

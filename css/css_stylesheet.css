@@ -1,6 +1,6 @@
-/* {
+* {
   outline: 1px solid red;
-}*/
+}
 
 html, body {
   height: 100%;
@@ -429,12 +429,12 @@ html, body {
   align-items: center;
   justify-content: center;
   width: 87%;
+  font-size: 14px;
   margin: 4% auto;
 }
 
 .view-live-code>span, a {
   font-family: Arial;
-  font-size: 14px;
   color: #181818;
 }
 
@@ -538,6 +538,7 @@ html, body {
   align-items: center;
   justify-content: center;
   width: 87%;
+  font-size: 14px;
   margin: 6% auto;
 }
 
@@ -559,13 +560,13 @@ html, body {
   align-items: center;
   width: 10%;
   height: 60%;
+  font-size: 18px;
   margin: 0 3.5% 0 auto;
   border-left: 1px solid black;
 }
 
 .project-num p {
   font-family: Arial;
-  font-size: 18px;
   color: #181818;
   margin: 0;
 }
@@ -739,6 +740,7 @@ html, body {
   align-items: center;
   width: 10%;
   height: 60%;
+  font-size: 18px;
   margin: 0 auto 0 3.5%;
   border-right: 1px solid black;
 }
@@ -902,16 +904,16 @@ html, body {
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
-  width: 155px;
+  min-width: 11%;
   height: 25%;
+  font-size: 20px;
   margin: auto;
 }
 
 .contact-name span {
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
   font-weight: 700;
-  line-height: 21px;
+  line-height: 1.5;
   color: #FFE0D6;
   margin: 0;
 }
@@ -928,16 +930,18 @@ html, body {
   color: #FFAA88;
 }
 
+.contact {
+  font-size: 14px;
+}
+
 .contact-phone {
   font-family: Arial;
-  font-size: 14px;
   color: #FFE0D6;
   margin: 0 auto;
 }
 
 .contact-mail {
   font-family: Arial;
-  font-size: 14px;
   font-weight: bold;
   color: #FFE0D6;
   text-decoration: none;
@@ -946,7 +950,6 @@ html, body {
 
 .contact-location {
   font-family: Arial;
-  font-size: 14px;
   color: #FFE0D6;
   margin: 0 auto;
 }
@@ -1096,23 +1099,15 @@ html, body {
   /*--- Contact section ---*/
   .contact-name {
     width: 220px;
+    font-size: 28px;
   }
 
   .contact-name span {
-    font-size: 28px;
-    line-height: 21px;
+    line-height: 1.5;
     margin: 3% 0;
   }
 
-  .contact-phone {
-    font-size: 18px;
-  }
-
-  .contact-mail {
-    font-size: 18px;
-  }
-
-  .contact-location {
+  .contact {
     font-size: 18px;
   }
 }
@@ -1465,7 +1460,7 @@ html, body {
   .project-description-paragraph {
     margin: 1% 0 0 0;
     font-size: 14px;
-    line-height: 2;
+    line-height: 1.5;
     overflow: visible;
     order: 3;
   }
@@ -1577,6 +1572,7 @@ html, body {
     width: 33%;
     height: 6.5%;
     margin-right: 15%;
+    font-size: 18px;
     box-sizing: border-box;
     border-top: 1px solid black;
     border-left: none;
@@ -1585,7 +1581,6 @@ html, body {
   .section.--3 .project-num p {
     writing-mode: vertical-rl;
     font-family: Arial;
-    font-size: 18px;
     margin: 15% 0;
     color: #181818;
   }
@@ -1619,6 +1614,7 @@ html, body {
     width: 33%;
     height: 6.5%;
     margin-left: 15%;
+    font-size: 18px;
     box-sizing: border-box;
     border-top: 1px solid black;
     border-right: none;
@@ -1898,6 +1894,7 @@ html, body {
     width: 33%;
     height: 6.5%;
     margin-right: 15%;
+    font-size: 18px;
     box-sizing: border-box;
     border-top: 1px solid black;
     border-left: none;
@@ -1906,7 +1903,6 @@ html, body {
   .section.--5 .project-num p {
     writing-mode: vertical-rl;
     font-family: Arial;
-    font-size: 18px;
     margin: 15% 0;
     color: #181818;
   }
@@ -1936,13 +1932,13 @@ html, body {
     flex-direction: column;
     justify-content: center;
     width: 10.2%;
+    font-size: 1.3vw;
     margin: auto;
     margin-left: 7.5%;
   }
 
   .contact-name span {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
     font-weight: 700;
     color: #FFE0D6;
     margin: 0;
@@ -1960,16 +1956,18 @@ html, body {
     color: #FFAA88;
   }
 
+  .contact {
+    font-size: 1vw;
+  }
+
   .contact-phone {
     font-family: Arial;
-    font-size: 14px;
     color: #FFE0D6;
     margin: auto;
   }
 
   .contact-mail {
     font-family: Arial;
-    font-size: 14px;
     font-weight: bold;
     color: #FFE0D6;
     text-decoration: none;
@@ -1978,7 +1976,6 @@ html, body {
 
   .contact-location {
     font-family: Arial;
-    font-size: 14px;
     color: #FFE0D6;
     margin: auto;
   }
