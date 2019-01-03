@@ -1647,7 +1647,7 @@ html, body {
   }
 
   .section.--4 .arrow-from:hover {
-    transform: scale(1.2) translateX(10%);
+    transform: scale(1.2) translateX(-10%);
   }
 
   .section.--4 .mobile {
