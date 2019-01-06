@@ -967,6 +967,21 @@ html, body {
   width: 16%;
 }
 
+footer {
+  width: 90vw;
+  text-align: center;
+  font-family: Arial;
+  font-size: 2.5vw;
+  margin: 0 auto;
+  padding: 2%;
+  color: #9F9F9F;
+}
+
+footer a {
+  text-decoration: none;
+  color: #6D6D6D;
+}
+
 @media only screen and (min-width: 500px) {
 
   /*--- Intro section ---*/
@@ -1108,6 +1123,10 @@ html, body {
 
   .contact {
     font-size: 18px;
+  }
+
+  footer {
+    font-size: 2vw;
   }
 }
 
@@ -1998,5 +2017,10 @@ html, body {
     border-right: 1px solid #FBE1D7;
     margin: auto 7.5% 0 auto;
     box-sizing: border-box;
+  }
+
+  footer {
+    font-size: 0.9vw;
+    padding: 1%;
   }
 }
