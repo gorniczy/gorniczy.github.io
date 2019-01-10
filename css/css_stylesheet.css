@@ -1,6 +1,3 @@
-/* {
-  outline: 1px solid red;
-}*/
 html, body {
   height: 100%;
   width: 100%;
@@ -12,9 +9,6 @@ html, body {
 .section {
   height: 100%;
   width: 100%;
-  /*  min-height: 50vw;
-  min-width: 300px;
-  margin: 0;*/
   font-size: 0;
 }
 
@@ -319,8 +313,6 @@ html, body {
   height: 153vw;
   max-width: 37.6vh;
   max-height: 70vh;
-  /*height: 551px;
-  width: 296px;*/
 }
 
 .section.--3 .arrow-to {
@@ -397,7 +389,6 @@ html, body {
   margin: 0 auto 3.5% 0;
   font-family: Arial;
   font-size: 4.5vw;
-  /*  font-size: 18px;*/
   font-weight: bold;
   color: #181818;
   line-height: 1.5;
@@ -416,7 +407,6 @@ html, body {
   text-align: justify;
   font-family: Arial;
   font-size: 3vw;
-  /*font-size: 12px;*/
   color: #181818;
   line-height: 1.5;
   margin-top: -21%;
@@ -456,8 +446,6 @@ html, body {
   height: 153vw;
   max-width: 43.5vh;
   max-height: 70vh;
-  /*width: 343px;
-  height: 551px;*/
 }
 
 .section.--3 .arrow-from {
@@ -584,8 +572,6 @@ html, body {
   height: 153vw;
   max-width: 43.5vh;
   max-height: 70vh;
-  /*width: 343px;
-  height: 551px;*/
 }
 
 .section.--4 .mobile {
@@ -679,8 +665,6 @@ html, body {
   height: 153vw;
   max-width: 37.6vh;
   max-height: 70vh;
-  /*height: 551px;
-  width: 296px;*/
 }
 
 .section.--4 .arrow-to {
@@ -778,8 +762,6 @@ html, body {
   height: 153vw;
   max-width: 37.6vh;
   max-height: 70vh;
-  /*height: 551px;
-  width: 296px;*/
 }
 
 .section.--5 .arrow-to {
@@ -833,8 +815,6 @@ html, body {
   height: 153vw;
   max-width: 43.5vh;
   max-height: 70vh;
-  /*width: 343px;
-  height: 551px;*/
 }
 
 .section.--5 .arrow-from {
@@ -1039,8 +1019,6 @@ footer a {
   .section.--3 .project-description {
     max-width: 43vh;
     max-height: 80vh;
-    /*height: 551px;
-    width: 296px;*/
   }
 
   .section.--3 .project-name {
@@ -1049,13 +1027,11 @@ footer a {
 
   .project-description-heading {
     font-size: 24px;
-    /*  font-size: 18px;*/
     line-height: 29px;
   }
 
   .project-description-paragraph {
     font-size: 12px;
-    /*font-size: 12px;*/
     color: #181818;
     line-height: 3vh;
     overflow-y: scroll;
@@ -1068,23 +1044,17 @@ footer a {
   .section.--3 .mockups {
     max-width: 50vh;
     max-height: 80vh;
-    /*width: 343px;
-    height: 551px;*/
   }
 
   /*--- Project 002 ---*/
   .section.--4 .mockups {
     max-width: 50vh;
     max-height: 80vh;
-    /*width: 343px;
-    height: 551px;*/
   }
 
   .section.--4 .project-description {
     max-width: 43vh;
     max-height: 80vh;
-    /*height: 551px;
-    width: 296px;*/
   }
 
   .section.--4 .project-name {
@@ -1095,8 +1065,6 @@ footer a {
   .section.--5 .project-description {
     max-width: 43vh;
     max-height: 80vh;
-    /*height: 551px;
-    width: 296px;*/
   }
 
   .section.--5 .project-name {
@@ -1106,8 +1074,6 @@ footer a {
   .section.--5 .mockups {
     max-width: 50vh;
     max-height: 80vh;
-    /*width: 343px;
-    height: 551px;*/
   }
 
   /*--- Contact section ---*/
