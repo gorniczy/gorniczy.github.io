@@ -50,14 +50,11 @@
 
     function setSpecificFonts() {
       const landscape = window.matchMedia("(orientation: landscape)").matches;
-
       const nameSize = landscape ? 0.04 : 0.05;
       const headingSize = landscape ? 0.04 : 0.06;
       const paragraphSize = landscape ? 0.03 : 0.05;
       const viewSize = landscape ? 0.03 : 0.05;
       const numberSize = landscape ? 0.2 : 0.038;
-
-
       setFontSize('project-description-text', 'project-name', nameSize); // project names
       setFontSize('project-description-text', 'project-description-heading', headingSize); // project description heading
       setFontSize('project-description-text', 'project-description-paragraph', paragraphSize); // project description paragraph
@@ -78,22 +75,17 @@
     // smooth scroll animation
 
     function smoothScroll(target, duration) {
-
       const getHere = document.querySelector(target);
       const targetPosition = getHere.getBoundingClientRect().top;
       const startPosition = window.pageYOffset;
       const scrollToY = startPosition + targetPosition;
       let start = null;
-
       function animation(currentTime) {
-
         if (start === null) start = currentTime;
         const timeElapsed = currentTime - start;
         const currentPosition = targetPosition * timeElapsed / duration + startPosition;
         const wantedPosition = startPosition < scrollToY ? Math.min(currentPosition, scrollToY) : Math.max(currentPosition, scrollToY);
-
         window.scrollTo(0, wantedPosition);
-
         if (timeElapsed < duration) requestAnimationFrame(animation);
       }
       requestAnimationFrame(animation);
@@ -142,15 +134,12 @@
     const arrow = document.getElementsByClassName('arrow-to');
 
     function enlargeArrow(num) {
-
       const directionDegree = num === 1 ? "translateX(10%) rotate(180deg)" : "translateX(-10%)";
-
       arrow[num].style.transform = "scale(1.2) " + directionDegree;
     }
 
     function shrinkArrow(num) {
       const noneOrDeg = num === 1 ? "rotate(180deg)" : "none";
-
       arrow[num].style.transform = noneOrDeg;
     }
   </script>
@@ -525,7 +514,7 @@
       <span class="contact-name-1">DE<span class="emphasis --2">NIS</span></span>
       <span class="contact-name-2"><span class="emphasis --2">G</span>ORNICHAR</span>
     </div>
-    <span class="contact contact-phone">+48 503 687 787</span>
+    <a href="tel:+48503687787" class="contact contact-phone">+48 503 687 787</a>
     <a href="mailto:denysgornichar@gmail.com" class="contact contact-mail">denysgornichar@gmail.com</a>
     <span class="contact contact-location">Warsaw, Poland</span>
     <div class="social-icons">

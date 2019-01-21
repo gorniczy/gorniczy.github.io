@@ -916,6 +916,7 @@ html, body {
 .contact-phone {
   font-family: Arial;
   color: #FFE0D6;
+  text-decoration: none;
   margin: 0 auto;
 }
 
